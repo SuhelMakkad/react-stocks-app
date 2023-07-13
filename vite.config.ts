@@ -13,11 +13,12 @@ export default defineConfig({
       "@/components": getPath("./src/common/components"),
       "@/hooks": getPath("./src/common/hooks"),
       "@/styles": getPath("./src/common/styles"),
-      "@/lib": getPath("./src/common/lib"),
+      "@/utils": getPath("./src/common/utils"),
       "@/store": getPath("./src/common/store"),
       "@/images": getPath("./src/assets/images"),
       "@/assets": getPath("./src/assets"),
       "@/": getPath("./src"),
+      "@": getPath("./src"),
     },
   },
 
