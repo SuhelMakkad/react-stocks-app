@@ -77,6 +77,10 @@
     @apply bg-background text-foreground;
   }
 
+  .container {
+    @apply px-3 md:px-5 lg:px-8;
+  }
+
   .hide-scroll {
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
