@@ -16,6 +16,7 @@
 
     "baseUrl": ".",
     "paths": {
+      "@/layouts/*": ["src/layouts/*"],
       "@/pages/*": ["src/pages/*"],
       "@/components/*": ["src/common/components/*"],
       "@/hooks/*": ["src/common/hooks/*"],

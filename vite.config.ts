@@ -9,6 +9,7 @@ const getPath = (route: string) => path.resolve(__dirname, route);
 export default defineConfig({
   resolve: {
     alias: {
+      "@/layouts": getPath("./src/layouts"),
       "@/pages": getPath("./src/pages"),
       "@/components": getPath("./src/common/components"),
       "@/hooks": getPath("./src/common/hooks"),
