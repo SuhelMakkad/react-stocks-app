@@ -1,5 +1,7 @@
 import OverviewCard from "@/components/overview-card";
 
+import { overviewData } from "@/assets/data/overview";
+
 const Dashboard = () => {
   return (
     <div className="container mx-auto pt-8">
@@ -9,10 +11,14 @@ const Dashboard = () => {
       </div>
 
       <div className="grid gap-2 md:gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <OverviewCard title="NASDAQ" value="$45,231.89" percentage={10} type="up" />
-        <OverviewCard title="NASDAQ" value="$45,231.89" percentage={10} type="down" />
-        <OverviewCard title="NASDAQ" value="$45,231.89" percentage={10} type="down" />
-        <OverviewCard title="NASDAQ" value="$45,231.89" percentage={10} type="down" />
+        {overviewData.map((overview) => (
+          <OverviewCard
+            title={overview.title}
+            currentPrice={overview.currentPrice}
+            percentageChange={overview.percentageChange}
+            trend={overview.trend}
+          />
+        ))}
       </div>
     </div>
   );
