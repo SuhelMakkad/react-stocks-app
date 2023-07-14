@@ -1,7 +1,11 @@
 import Logo from "@/components/logo";
+import UserProfile from "@/components/user-profile";
 import NavList from "./nav-list";
 
 import { navItemsGroups } from "./nav-items";
+
+const name = "Rick Sanchez";
+const profileImg = "https://github.com/shadcn.png";
 
 const Navbar = () => {
   return (
@@ -9,6 +13,8 @@ const Navbar = () => {
       <Logo className="pl-4" />
 
       <NavList navItemsGroups={navItemsGroups} />
+
+      <UserProfile className="mt-auto pl-4" profileImg={profileImg} name={name} />
     </div>
   );
 };
