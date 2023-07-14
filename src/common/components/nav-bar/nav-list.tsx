@@ -15,12 +15,13 @@ const NavList = ({ navItemsGroups }: NavListProps) => {
           {navItemsGroup.title}
         </span>
       )}
+
       <ul className="flex justify-center md:flex-col gap-2 overflow-auto hide-scroll">
         {navItemsGroup.items.map((navItems) => {
           const Icon = I[navItems.icon] as I.LucideIcon;
           return (
             <li key={navItems.href}>
-              <a className="flex flex-col md:flex-row items-center gap-2 hover:bg-black/30 px-4 py-2 rounded hover:text-primary text-secondary-foreground transition-colors">
+              <a className="flex flex-col md:flex-row items-center gap-2 hover:bg-white/20 px-4 py-2 rounded hover:text-primary text-secondary-foreground transition-colors">
                 <Icon className="w-8 h-8 md:text-white/80 md:w-5 md:h-5" />
                 <span className="text-sm md:text-lg">{navItems.label}</span>
               </a>
