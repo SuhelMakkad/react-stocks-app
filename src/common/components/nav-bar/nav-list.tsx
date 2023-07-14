@@ -21,8 +21,8 @@ const NavList = ({ navItemsGroups }: NavListProps) => {
           const Icon = I[navItems.icon] as I.LucideIcon;
           return (
             <li key={navItems.href}>
-              <a className="flex flex-col lg:flex-row items-center gap-2 hover:bg-white/20 px-4 py-2 rounded hover:text-primary text-secondary-foreground transition-colors">
-                <Icon className="w-8 h-8 lg:text-white/80 lg:w-5 lg:h-5" />
+              <a className="flex flex-col lg:flex-row items-center gap-2 hover:bg-primary/20 px-4 py-2 rounded hover:text-primary text-secondary-foreground transition-colors">
+                <Icon className="w-8 h-8 lg:text-primary/80 lg:w-5 lg:h-5" />
                 <span className="text-sm lg:text-lg">{navItems.label}</span>
               </a>
             </li>
