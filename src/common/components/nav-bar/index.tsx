@@ -10,11 +10,11 @@ const profileImg = "https://github.com/shadcn.png";
 const Navbar = () => {
   return (
     <div className="bg-slate-100 dark:bg-slate-950 h-full px-2 py-5 flex flex-col gap-4">
-      <Logo className="pl-4" />
+      <Logo className="pl-4 hidden md:flex" />
 
       <NavList navItemsGroups={navItemsGroups} />
 
-      <UserProfile className="mt-auto pl-4" profileImg={profileImg} name={name} />
+      <UserProfile className="mt-auto pl-4 hidden md:flex" profileImg={profileImg} name={name} />
     </div>
   );
 };
