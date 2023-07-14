@@ -1,12 +1,15 @@
-import Navbar from "@/components/nav-bar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import MainLayout from "@/common/layout/main-layout";
 
 export default function App() {
   return (
-    <main className="flex flex-col-reverse md:flex-row min-h-screen">
-      <aside className="border w-full md:w-72 min-h-[4rem]">
-        <Navbar />
-      </aside>
-      <div className="border grow min-h-[10rem]"></div>
-    </main>
+    <BrowserRouter>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element="Hello"></Route>
+        </Routes>
+      </MainLayout>
+    </BrowserRouter>
   );
 }
