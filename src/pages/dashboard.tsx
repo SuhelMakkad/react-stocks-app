@@ -10,7 +10,7 @@ const Dashboard = () => {
         <span className="text-muted-foreground">Quick overview of the market</span>
       </div>
 
-      <div className="grid gap-2 md:gap-4 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="flex md:grid gap-2 md:gap-4 grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 overflow-auto hide-scroll">
         {overviewData.map((overview) => (
           <OverviewCard
             title={overview.title}
