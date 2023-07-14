@@ -13,6 +13,7 @@ const Dashboard = () => {
       <div className="flex md:grid gap-2 md:gap-4 grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 overflow-auto hide-scroll">
         {overviewData.map((overview) => (
           <OverviewCard
+            key={overview.title}
             title={overview.title}
             currentPrice={overview.currentPrice}
             percentageChange={overview.percentageChange}
