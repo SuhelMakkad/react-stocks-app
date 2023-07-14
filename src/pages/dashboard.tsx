@@ -1,7 +1,7 @@
 import OverviewCard from "@/components/overview-card";
 
 import { overviewData } from "@/assets/data/overview";
-import { ThemeToggle } from "@/components/theme-toggle";
+import ThemeToggle from "@/components/theme-toggle";
 
 const Dashboard = () => {
   return (
