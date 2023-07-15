@@ -28,7 +28,7 @@ const NavList = ({ navItemsGroups }: NavListProps) => {
                   <Link
                     to={navItems.href}
                     aria-selected={location.pathname === navItems.href}
-                    className="flex flex-col lg:flex-row items-center gap-2 hover:bg-primary/20 px-4 py-2 rounded hover:text-primary text-secondary-foreground transition-colors aria-selected:bg-primary/10"
+                    className="flex flex-col lg:flex-row items-center gap-1 lg:gap-2 hover:bg-primary/20 px-4 py-1.5 lg:py-2 rounded hover:text-primary text-secondary-foreground transition-colors aria-selected:bg-primary/10"
                   >
                     <Icon className="w-8 h-8 lg:text-primary/80 lg:w-5 lg:h-5" />
                     <span className="text-sm lg:text-lg">{navItems.label}</span>

@@ -10,7 +10,7 @@ const Navbar = () => {
   const user = useUserStore();
 
   return (
-    <div className="bg-slate-100 dark:bg-slate-950 h-full px-2 py-1 lg:py-5 flex flex-col gap-4">
+    <div className="bg-slate-100 dark:bg-slate-950 h-full px-2 py-2 lg:py-5 flex flex-col gap-4">
       <Logo className="pl-4 hidden lg:flex" />
 
       <NavList navItemsGroups={navItemsGroups} />
