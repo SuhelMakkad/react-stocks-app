@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  buildAndTest:
-    name: Build & Test
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -35,33 +35,11 @@ jobs:
           name: dist
           path: dist/
 
-      # Upload coverage artifacts
-      - uses: actions/upload-artifact@v3
-        with:
-          name: coverage
-          path: coverage/lcov.info
-
-  coverage:
-    name: Coverage Analysis
-    needs: buildAndTest
-    runs-on: ubuntu-latest
-    steps:
-      # Download coverage artifacts
-      - uses: actions/download-artifact@v3
-        with:
-          name: coverage
-
-      - name: 📈 Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: lcov.info
-
   deploy:
     name: Deploy
     # Deploy only for main branch
     if: github.ref == 'refs/heads/main'
-    needs: buildAndTest
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
