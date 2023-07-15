@@ -8,7 +8,7 @@ import { stocks } from "@/assets/data/stocks";
 
 const Dashboard = () => {
   return (
-    <div className="container mx-auto pt-8">
+    <div className="container mx-auto pt-4">
       <div className="flex justify-between items-center gap-2 mb-8">
         <h1 className="text-3xl font-semibold tracking-tight">Markets</h1>
         <span className="text-muted-foreground">
