@@ -1,4 +1,16 @@
-export const stocks = [
+export type Trend = "up" | "down";
+
+export type Stock = {
+  symbol: string;
+  name: string;
+  fullName: string;
+  currentPrice: number;
+  percentageChange: number;
+  trend: Trend;
+  category: string;
+};
+
+export const stocks: Stock[] = [
   {
     symbol: "AMZN",
     name: "amazon",

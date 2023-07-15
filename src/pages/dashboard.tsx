@@ -16,21 +16,27 @@ const Dashboard = () => {
         </span>
       </div>
 
-      <div className="flex md:grid gap-2 md:gap-4 grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 overflow-auto hide-scroll">
-        {overviewData.map((overview) => (
-          <OverviewCard
-            key={overview.symbol}
-            title={overview.name}
-            currentPrice={overview.currentPrice}
-            percentageChange={overview.percentageChange}
-            trend={overview.trend}
-          />
-        ))}
-      </div>
+      <section className="space-y-3">
+        <h3 className="text-sm font-semibold text-muted-foreground">
+          Quick Overview of the Market
+        </h3>
+        <div className="flex md:grid gap-2 md:gap-4 grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 overflow-auto hide-scroll">
+          {overviewData.map((overview) => (
+            <OverviewCard
+              key={overview.symbol}
+              title={overview.name}
+              currentPrice={overview.currentPrice}
+              percentageChange={overview.percentageChange}
+              trend={overview.trend}
+            />
+          ))}
+        </div>
+      </section>
 
-      <div className="mt-16">
+      <section className="mt-16 space-y-3">
+        <h3 className="text-sm font-semibold text-muted-foreground">Recently Treading Stocks</h3>
         <StocksListTable stocks={stocks} />
-      </div>
+      </section>
     </div>
   );
 };

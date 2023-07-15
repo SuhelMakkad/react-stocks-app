@@ -15,7 +15,6 @@ import { ArrowUpDown, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-import { Input } from "@/components/ui/input";
 import {
   Table,
   TableBody,
@@ -24,19 +23,11 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import TrendChip, { Trend } from "@/components/trend-chip";
+
+import TrendChip from "@/components/trend-chip";
+import type { Stock } from "@/assets/data/stocks";
 
 import { formateAmount } from "@/utils/index";
-
-export type Stock = {
-  symbol: string;
-  name: string;
-  fullName: string;
-  currentPrice: number;
-  percentageChange: number;
-  trend: Trend;
-  category: string;
-};
 
 export type StocksListTableProps = {
   stocks: Stock[];

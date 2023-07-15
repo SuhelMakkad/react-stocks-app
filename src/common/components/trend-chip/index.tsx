@@ -1,7 +1,5 @@
+import type { Trend } from "@/assets/data/stocks";
 import { cn } from "@/utils/tw";
-import React from "react";
-
-export type Trend = "up" | "down";
 
 export type TrendChipProps = {
   trend: Trend;
