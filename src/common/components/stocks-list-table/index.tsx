@@ -137,6 +137,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
           className="max-w-sm bg-inherit grow outline-none"
         />
       </div>
+
       <div className="md:rounded-md border mb-4 -mx-3">
         <Table>
           <TableHeader className="max-md:hidden">
