@@ -71,7 +71,9 @@ export const columns: ColumnDef<Stock>[] = [
       return <span className="flex">Trend</span>;
     },
     cell: ({ row }) => (
-      <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
+      <Link to={`/stock/${row.original.symbol}`} className="cursor-pointer">
+        <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
+      </Link>
     ),
   },
   {
@@ -89,14 +91,17 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <div className="flex flex-col md:flex-row gap-1 items-end md:items-center lowercase">
+      <Link
+        to={`/stock/${row.original.symbol}`}
+        className="flex flex-col md:flex-row gap-1 items-end md:items-center lowercase"
+      >
         <span className="text-lg font-medium">{formateAmount(row.getValue("currentPrice"))}</span>
         <TrendChip
           className="grow-0 w-max scale-90"
           trend={row.original.trend}
           percentageChange={row.original.percentageChange}
         />
-      </div>
+      </Link>
     ),
   },
 ];
