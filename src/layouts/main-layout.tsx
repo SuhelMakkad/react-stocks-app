@@ -1,7 +1,7 @@
 import Navbar from "@/components/nav-bar";
 
 export type MainLayoutProps = {
-  children?: React.ReactElement;
+  children?: React.ReactElement | React.ReactElement[];
 };
 
 const MainLayout = ({ children }: MainLayoutProps) => {

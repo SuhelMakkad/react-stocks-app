@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
-import { ChevronLeftCircleIcon } from "lucide-react";
+import { ChevronLeftCircleIcon, Loader2 } from "lucide-react";
 
 import ThemeToggle from "@/components/theme-toggle";
 import TrendChip from "@/components/trend-chip";
@@ -133,9 +134,38 @@ const StockDetailsPage = () => {
         </p>
       </section>
 
-      <div className="flex justify-center">
-        <Button className="mt-8">Add to Portfolio</Button>
-      </div>
+      <AddStockBtn stockName={stock.fullName} />
+    </div>
+  );
+};
+
+import { useToast } from "@/components/ui/use-toast";
+
+export type AddStockBtnProps = {
+  stockName: string;
+};
+
+const AddStockBtn = ({ stockName }: AddStockBtnProps) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
+
+  const handleStockAdd = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      toast({
+        title: "New Stock Added to Portfolio",
+        description: `${stockName} has been added to your portfolio`,
+      });
+    }, 1000);
+  };
+
+  return (
+    <div className="flex justify-center">
+      <Button className="mt-8" onClick={handleStockAdd} disabled={isLoading}>
+        {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+        Add to Portfolio
+      </Button>
     </div>
   );
 };
