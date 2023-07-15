@@ -33,7 +33,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <section className="mt-12 md:mt-16 space-y-3">
+      <section className="mt-12 mb-8 md:mt-16 space-y-3">
         <h3 className="text-sm font-semibold text-muted-foreground">Recently Treading Stocks</h3>
         <StocksListTable stocks={stocks} />
       </section>

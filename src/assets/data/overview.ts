@@ -1,36 +1,46 @@
-import { Stock } from "./stocks";
+import stockChartOverview from "./chart";
 
-export const overviewData: Omit<Omit<Stock, "chartData">, "fullName">[] = [
+import type { Stock } from "./stocks";
+
+export const overviewData: Stock[] = [
   {
-    symbol: "DJI",
-    name: "djia",
+    symbol: "DJIA",
+    name: "Dow Jones",
+    fullName: "Dow Jones Industrial Average",
     currentPrice: 25585.69,
     percentageChange: 0.38,
     trend: "down",
-    category: "junior-market",
+    category: "overview",
+    chartData: stockChartOverview.DJIA,
   },
   {
-    symbol: "NDX",
-    name: "nasdaq",
+    symbol: "NASDAQ",
+    name: "NASDAQ",
+    fullName: "NASDAQ",
     currentPrice: 6648.0,
     percentageChange: 4.22,
     trend: "up",
-    category: "junior-market",
+    category: "overview",
+    chartData: stockChartOverview.META,
   },
   {
-    symbol: "SNP",
-    name: "s&p 500",
+    symbol: "S&P",
+    name: "S&P 500",
+    fullName: "S&P 500",
     currentPrice: 2862.06,
     percentageChange: 13.49,
     trend: "up",
-    category: "junior-market",
+    category: "overview",
+    chartData: stockChartOverview.BAC,
   },
   {
     symbol: "R2K",
-    name: "russ 2k",
+    name: "Russ 2k",
+    fullName: "Russ 2k",
     currentPrice: 1514.22,
     percentageChange: 1.01,
     trend: "down",
-    category: "junior-market",
+    category: "overview",
+    chartData: stockChartOverview.AMZN,
   },
 ];
