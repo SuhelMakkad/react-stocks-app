@@ -17,7 +17,7 @@ export const navItemsGroups: NavItemsGroups = [
     items: [
       {
         label: "Settings",
-        href: "/setting",
+        href: "/settings",
         icon: "Settings",
       },
       {
