@@ -1,10 +1,10 @@
-import OverviewCard from "@/components/overview-card";
+import { Link } from "react-router-dom";
 
+import OverviewCard from "@/components/overview-card";
 import ThemeToggle from "@/components/theme-toggle";
 import StocksListTable from "@/components/stocks-list-table";
 
-import { stocks } from "@/assets/data/stocks";
-import { Link } from "react-router-dom";
+import { Stock, stocks } from "@/assets/data/stocks";
 
 const overStocks = stocks.filter((stock) => stock.category === "overview");
 
@@ -36,11 +36,47 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <section className="mt-12 mb-8 md:mt-16 space-y-3">
-        <h3 className="text-sm font-semibold text-muted-foreground">Recently Treading Stocks</h3>
-        <StocksListTable stocks={stocks} />
-      </section>
+      <StocksTableSection />
     </div>
+  );
+};
+
+import { useState, useEffect } from "react";
+import { categories } from "@/assets/data/category";
+
+const StocksTableSection = () => {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [filteredStocks, setFilteredStocks] = useState<Stock[]>([]);
+
+  useEffect(() => {
+    if (selectedCategory === "all") {
+      setFilteredStocks(stocks);
+      return;
+    }
+
+    setFilteredStocks(stocks.filter((stock) => stock.category === selectedCategory));
+  }, [selectedCategory]);
+
+  return (
+    <section className="mt-12 mb-8 md:mt-16 space-y-3">
+      <h3 className="text-sm font-semibold text-muted-foreground">Stocks Details</h3>
+
+      <ul className="flex">
+        {categories.map((category) => (
+          <li key={category.id}>
+            <button
+              className="text-xs px-3 py-1.5 rounded-full aria-selected:bg-accent aria-selected:font-semibold"
+              aria-selected={selectedCategory === category.id}
+              onClick={() => setSelectedCategory(category.id)}
+            >
+              {category.label}
+            </button>
+          </li>
+        ))}
+      </ul>
+
+      <StocksListTable stocks={filteredStocks} />
+    </section>
   );
 };
 
