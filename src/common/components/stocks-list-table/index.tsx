@@ -60,7 +60,7 @@ export const columns: ColumnDef<Stock>[] = [
     },
     cell: ({ row }) => (
       <Link to={`/stock/${row.original.symbol}`} className="flex flex-col capitalize">
-        <span className="text-lg font-medium">{row.original.name}</span>
+        <span className="text-lg font-medium uppercase">{row.original.symbol}</span>
         <span className="text-secondary-foreground">{row.getValue("fullName")}</span>
       </Link>
     ),
