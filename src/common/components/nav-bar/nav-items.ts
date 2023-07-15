@@ -10,7 +10,6 @@ export type NavItemsGroups = {
   }[];
 }[];
 
-// add new group to show new section in the nav
 export const navItemsGroups: NavItemsGroups = [
   {
     id: "profile",
