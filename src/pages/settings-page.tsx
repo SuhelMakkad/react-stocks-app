@@ -15,12 +15,6 @@ const SettingsPage = () => {
         <ThemeToggle />
       </div>
 
-      <img
-        className="aspect-square h-20 w-20 rounded-full mx-auto md:mx-0"
-        alt="Profile Image of Rick Sanchez"
-        src="https://github.com/shadcn.png"
-      />
-
       <ProfileForm />
     </div>
   );

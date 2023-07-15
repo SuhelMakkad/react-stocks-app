@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-import { cn } from "@/utils/tw";
+import { useUserStore } from "@/store/user-store";
+import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -19,8 +19,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
-import { useUserStore } from "@/store/user-store";
-import { Loader2 } from "lucide-react";
+import { UserAvatar } from "@/components/user-profile";
 
 // validation schema for the form
 const profileFormSchema = z.object({
@@ -75,6 +74,12 @@ export function ProfileForm() {
 
   return (
     <Form {...form}>
+      <UserAvatar
+        className="h-24 w-24 mx-auto md:mx-0"
+        profileImg={userDetails.profileImage}
+        name={userDetails.username}
+      />
+
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <FormField
           control={form.control}

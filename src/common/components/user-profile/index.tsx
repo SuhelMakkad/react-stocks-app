@@ -13,13 +13,19 @@ const getInitialsFromName = (fullName: string) => {
   return fullName.split(" ").map((name) => name[0]);
 };
 
+export const UserAvatar = ({ profileImg, name, className }: UserProfileProps) => {
+  return (
+    <Avatar className={cn("w-8 h-8", className)}>
+      <AvatarImage src={profileImg!} alt={`Profile Image of ${name}`} />
+      <AvatarFallback>{getInitialsFromName(name)}</AvatarFallback>
+    </Avatar>
+  );
+};
+
 const UserProfile = ({ profileImg, name, className }: UserProfileProps) => {
   return (
     <div className={cn("flex gap-2 items-center", className)}>
-      <Avatar className="w-8 h-8">
-        <AvatarImage src={profileImg!} alt={`Profile Image of ${name}`} />
-        <AvatarFallback>{getInitialsFromName(name)}</AvatarFallback>
-      </Avatar>
+      <UserAvatar name={name} profileImg={profileImg} />
       <span className="capitalize text-lg font-medium whitespace-nowrap overflow-hidden text-ellipsis">
         {name}
       </span>
