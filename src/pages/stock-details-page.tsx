@@ -105,7 +105,7 @@ const StockDetailsPage = () => {
           analyst estimates
         </h3>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-center">
           <PercentageIndicator percentage={stock.percentageChange} trend={stock.trend} />
 
           <div className="flex flex-col gap-2 w-full">
