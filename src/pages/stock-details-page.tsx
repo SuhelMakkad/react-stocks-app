@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import { ChevronLeftCircleIcon, Loader2 } from "lucide-react";
@@ -50,7 +50,11 @@ const StockDetailsPage = () => {
 
   if (!stock) {
     // TODO: add a 404 page
-    return "404";
+    return (
+      <div className="container mx-auto pt-4">
+        <span>404</span>
+      </div>
+    );
   }
 
   return (
