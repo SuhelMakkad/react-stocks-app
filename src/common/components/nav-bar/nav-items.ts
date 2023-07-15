@@ -19,11 +19,6 @@ export const navItemsGroups: NavItemsGroups = [
         href: "/settings",
         icon: "Settings",
       },
-      {
-        label: "Teams",
-        href: "/teams",
-        icon: "Group",
-      },
     ],
   },
   {

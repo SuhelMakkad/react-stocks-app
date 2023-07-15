@@ -1,5 +1,4 @@
 import * as I from "lucide-react";
-import { cn } from "@/utils/tw";
 
 import type { NavItemsGroups } from "./nav-items";
 import { Link } from "react-router-dom";
@@ -8,7 +7,6 @@ export type NavListProps = {
   navItemsGroups: NavItemsGroups;
 };
 
-// className={cn(navItemsGroup.id !== "menu" && "hidden lg:block")}
 const NavList = ({ navItemsGroups }: NavListProps) => {
   return (
     <div className="flex justify-center lg:flex-col">
