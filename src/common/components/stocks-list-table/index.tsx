@@ -12,8 +12,6 @@ import {
 } from "@tanstack/react-table";
 import { ArrowDown, ArrowUp, ArrowUpDown, Search } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-
 import {
   Table,
   TableBody,
@@ -28,6 +26,7 @@ import type { Stock } from "@/assets/data/stocks";
 
 import { formateAmount } from "@/utils/index";
 import OverviewChart from "../chart/overview";
+import { Link } from "react-router-dom";
 
 export type StocksListTableProps = {
   stocks: Stock[];
@@ -60,10 +59,10 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <div className="flex flex-col capitalize">
+      <Link to={`/stock/${row.original.symbol}`} className="flex flex-col capitalize">
         <span className="text-lg font-medium">{row.original.name}</span>
         <span className="text-secondary-foreground">{row.getValue("fullName")}</span>
-      </div>
+      </Link>
     ),
   },
   {
