@@ -2,6 +2,7 @@ import * as I from "lucide-react";
 import { cn } from "@/utils/tw";
 
 import type { NavItemsGroups } from "./nav-items";
+import { Link } from "react-router-dom";
 
 export type NavListProps = {
   navItemsGroups: NavItemsGroups;
@@ -21,10 +22,13 @@ const NavList = ({ navItemsGroups }: NavListProps) => {
           const Icon = I[navItems.icon] as I.LucideIcon;
           return (
             <li key={navItems.href}>
-              <a className="flex flex-col lg:flex-row items-center gap-2 hover:bg-primary/20 px-4 py-2 rounded hover:text-primary text-secondary-foreground transition-colors">
+              <Link
+                to={navItems.href}
+                className="flex flex-col lg:flex-row items-center gap-2 hover:bg-primary/20 px-4 py-2 rounded hover:text-primary text-secondary-foreground transition-colors"
+              >
                 <Icon className="w-8 h-8 lg:text-primary/80 lg:w-5 lg:h-5" />
                 <span className="text-sm lg:text-lg">{navItems.label}</span>
-              </a>
+              </Link>
             </li>
           );
         })}
