@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 
 import { formateAmount } from "@/utils/index";
 import { stocks } from "@/assets/data/stocks";
+import { cn } from "@/utils/tw";
+import ProgressWithLabel from "@/components/progress-with-label";
 
 const getStockDetails = (symbol: string) => {
   const stock = stocks.find((stock) => stock.symbol?.toLowerCase() === symbol?.toLowerCase());
@@ -97,17 +99,38 @@ const StockDetailsPage = () => {
         </ul>
       </section>
 
-      <Button className="w-full mt-8">Add to Portfolio</Button>
-
-      <section className="mt-8">
-        <h3 className="capitalize text-muted-foreground font-semibold text-sm md:text-base block mb-2">
+      <section className="mt-12">
+        <h3 className="capitalize text-muted-foreground font-semibold text-sm md:text-base block mb-4">
           analyst estimates
         </h3>
+
+        <div className="flex gap-4 items-center">
+          <div
+            className={cn(
+              stock.trend === "up" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700",
+              "w-24 h-24 rounded-full flex justify-center items-center gap-px text-3xl shrink-0 font-semibold"
+            )}
+          >
+            {stock.percentageChange.toFixed()}
+
+            <span className="text-sm">%</span>
+          </div>
+
+          <div className="flex flex-col gap-2 w-full">
+            <ProgressWithLabel
+              label="buy"
+              percentage={stock.trend === "up" ? 62 : 21}
+              type={stock.trend === "up" ? "green" : "red"}
+            />
+            <ProgressWithLabel label="hold" percentage={4} />
+            <ProgressWithLabel label="sell" percentage={15} />
+          </div>
+        </div>
       </section>
 
-      <section className="mt-8">
+      <section className="mt-12">
         <h3 className="capitalize text-muted-foreground font-semibold text-sm md:text-base block mb-2">
-          about {stock.name}
+          about {stock.fullName}
         </h3>
 
         <p>
@@ -118,6 +141,10 @@ const StockDetailsPage = () => {
           quas!
         </p>
       </section>
+
+      <div className="flex justify-center">
+        <Button className="mt-8">Add to Portfolio</Button>
+      </div>
     </div>
   );
 };

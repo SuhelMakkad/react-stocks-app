@@ -137,7 +137,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
         />
       </div>
 
-      <div className="md:rounded-md border mb-4 -mx-3">
+      <div className="md:rounded-md border -mx-3 md:mx-auto">
         <Table>
           <TableHeader className="max-md:hidden">
             {table.getHeaderGroups().map((headerGroup) => (
