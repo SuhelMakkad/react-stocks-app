@@ -11,7 +11,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ArrowUpDown, Search } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -34,18 +34,30 @@ export type StocksListTableProps = {
   stocks: Stock[];
 };
 
+const SortArrow = ({ order }: { order?: string | false }) => {
+  if (!order) {
+    return <ArrowUpDown className="ml-2 h-3 w-3" />;
+  }
+
+  if (order === "asc") {
+    return <ArrowUp className="ml-2 h-3 w-3" />;
+  }
+  return <ArrowDown className="ml-2 h-3 w-3" />;
+};
+
 export const columns: ColumnDef<Stock>[] = [
   {
     accessorKey: "fullName",
     header: ({ column }) => {
+      const sortOrder = column.getIsSorted();
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        <button
+          className="flex gap-2 items-center"
+          onClick={() => column.toggleSorting(sortOrder === "asc")}
         >
           Name
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
+          <SortArrow order={sortOrder} />
+        </button>
       );
     },
     cell: ({ row }) => <div className="capitalize">{row.getValue("fullName")}</div>,
@@ -53,14 +65,15 @@ export const columns: ColumnDef<Stock>[] = [
   {
     accessorKey: "currentPrice",
     header: ({ column }) => {
+      const sortOrder = column.getIsSorted();
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        <button
+          className="flex gap-2 items-center"
+          onClick={() => column.toggleSorting(sortOrder === "asc")}
         >
           Amount
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
+          <SortArrow order={sortOrder} />
+        </button>
       );
     },
     cell: ({ row }) => (
@@ -79,14 +92,15 @@ export const columns: ColumnDef<Stock>[] = [
   {
     accessorKey: "percentageChange",
     header: ({ column }) => {
+      const sortOrder = column.getIsSorted();
       return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        <button
+          className="flex gap-2 items-center"
+          onClick={() => column.toggleSorting(sortOrder === "asc")}
         >
           Change
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
+          <SortArrow order={sortOrder} />
+        </button>
       );
     },
     cell: ({ row }) => (
