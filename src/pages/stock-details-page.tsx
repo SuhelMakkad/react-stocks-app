@@ -26,8 +26,8 @@ const StockDetailsPage = () => {
     <div className="container mx-auto pt-4">
       <section className="flex justify-between items-center gap-2 mb-8">
         <div className="flex gap-2 items-center">
-          <Link to={"/"}>
-            <ChevronLeftCircleIcon className="block md:hidden opacity-50 w-9 h-9" />
+          <Link to={"/"} className="block lg:hidden">
+            <ChevronLeftCircleIcon className="opacity-50 w-9 h-9" />
           </Link>
           <header className="leading-none">
             <h1 className="text-lg font-semibold tracking-tight">{stock.symbol}</h1>
