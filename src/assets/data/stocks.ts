@@ -22,7 +22,7 @@ export const stocks: Stock[] = [
     currentPrice: 25585.69,
     percentageChange: 0.38,
     trend: "down",
-    category: "junior market",
+    category: "junior-market",
     chartData: stockChartOverview.AMZN,
   },
   {
@@ -32,7 +32,7 @@ export const stocks: Stock[] = [
     currentPrice: 6648.0,
     percentageChange: 4.22,
     trend: "up",
-    category: "junior market",
+    category: "junior-market",
     chartData: stockChartOverview.META,
   },
   {
@@ -42,7 +42,7 @@ export const stocks: Stock[] = [
     currentPrice: 2862.06,
     percentageChange: 13.49,
     trend: "up",
-    category: "junior market",
+    category: "junior-market",
     chartData: stockChartOverview.MSFT,
   },
   {
@@ -52,7 +52,7 @@ export const stocks: Stock[] = [
     currentPrice: 1514.22,
     percentageChange: 1.01,
     trend: "down",
-    category: "junior market",
+    category: "junior-market",
     chartData: stockChartOverview.TSLA,
   },
   {
@@ -62,7 +62,7 @@ export const stocks: Stock[] = [
     currentPrice: 1514.22,
     percentageChange: 10.1,
     trend: "up",
-    category: "junior market",
+    category: "junior-market",
     chartData: stockChartOverview.GOOG,
   },
 ];
