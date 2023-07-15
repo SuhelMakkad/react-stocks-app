@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import { ChevronLeftCircleIcon, Loader2 } from "lucide-react";
@@ -11,7 +11,7 @@ import PercentageIndicator from "@/components/percentage-indicator";
 import { Button } from "@/components/ui/button";
 
 import { formateAmount } from "@/utils/index";
-import { stocks } from "@/assets/data/stocks";
+import { Stock, stocks } from "@/assets/data/stocks";
 
 const getStockDetails = (symbol: string) => {
   const stock = stocks.find((stock) => stock.symbol?.toLowerCase() === symbol?.toLowerCase());
@@ -134,29 +134,43 @@ const StockDetailsPage = () => {
         </p>
       </section>
 
-      <AddStockBtn stockName={stock.fullName} />
+      <AddStockBtn stock={stock} />
     </div>
   );
 };
 
+import { usePortfolioStore } from "@/store/portfolio-store";
 import { useToast } from "@/components/ui/use-toast";
 
 export type AddStockBtnProps = {
-  stockName: string;
+  stock: Stock;
 };
 
-const AddStockBtn = ({ stockName }: AddStockBtnProps) => {
-  const [isLoading, setIsLoading] = useState(false);
+const AddStockBtn = ({ stock }: AddStockBtnProps) => {
+  const { addStock, removeStock, isAddedToPortfolio } = usePortfolioStore((state) => ({
+    addStock: state.addStock,
+    removeStock: state.removeStock,
+    isAddedToPortfolio: state.isAddedToPortfolio,
+  }));
+
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleStockAdd = () => {
     setIsLoading(true);
+
     setTimeout(() => {
-      setIsLoading(false);
+      const isAdded = isAddedToPortfolio(stock.symbol);
+
+      isAdded ? removeStock(stock.symbol) : addStock(stock.symbol);
       toast({
-        title: "New Stock Added to Portfolio",
-        description: `${stockName} has been added to your portfolio`,
+        title: isAdded ? "Stock Removed from Portfolio" : "New Stock Added to Portfolio",
+        description: isAdded
+          ? `${stock.name} has been removed from your portfolio`
+          : `${stock.name} has been added to your portfolio`,
       });
+
+      setIsLoading(false);
     }, 1000);
   };
 
@@ -164,7 +178,7 @@ const AddStockBtn = ({ stockName }: AddStockBtnProps) => {
     <div className="flex justify-center mt-8">
       <Button className="w-full md:w-auto mx-auto" onClick={handleStockAdd} disabled={isLoading}>
         {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-        Add to Portfolio
+        {isAddedToPortfolio(stock.symbol) ? "Remove from Portfolio" : "Add to Portfolio"}
       </Button>
     </div>
   );

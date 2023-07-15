@@ -9,7 +9,6 @@ export type NavListProps = {
 
 const NavList = ({ navItemsGroups }: NavListProps) => {
   const location = useLocation();
-  console.log(location);
 
   return (
     <div className="flex justify-center lg:flex-col">
