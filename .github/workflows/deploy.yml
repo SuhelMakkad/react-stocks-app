@@ -44,10 +44,6 @@ jobs:
     permissions:
       contents: write
     # Manual deployment
-    # See https://devblogs.microsoft.com/devops/i-need-manual-approvers-for-github-actions-and-i-got-them-now/
-    environment:
-      name: pchmn.github.io/vite-react-ts-ghactions-template
-      url: https://pchmn.github.io/vite-react-ts-ghactions-template/
     steps:
       # Download dist artifacts
       - uses: actions/download-artifact@v3
