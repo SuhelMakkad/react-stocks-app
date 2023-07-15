@@ -15,6 +15,7 @@ export type Stock = {
 };
 
 export const stocks: Stock[] = [
+  // main market stocks
   {
     symbol: "AMZN",
     name: "Amazon",
@@ -66,6 +67,7 @@ export const stocks: Stock[] = [
     chartData: stockChartOverview.GOOG,
   },
 
+  // junior market stocks
   {
     symbol: "MS",
     name: "Morgan Stanley",
@@ -115,5 +117,47 @@ export const stocks: Stock[] = [
     trend: "down",
     category: "junior-market",
     chartData: stockChartOverview.MA,
+  },
+
+  // overview stocks
+  {
+    symbol: "DJIA",
+    name: "Dow Jones",
+    fullName: "Dow Jones Industrial Average",
+    currentPrice: 25585.69,
+    percentageChange: 0.38,
+    trend: "down",
+    category: "overview",
+    chartData: stockChartOverview.DJIA,
+  },
+  {
+    symbol: "NASDAQ",
+    name: "NASDAQ",
+    fullName: "NASDAQ",
+    currentPrice: 6648.0,
+    percentageChange: 4.22,
+    trend: "up",
+    category: "overview",
+    chartData: stockChartOverview.META,
+  },
+  {
+    symbol: "S&P",
+    name: "S&P 500",
+    fullName: "S&P 500",
+    currentPrice: 2862.06,
+    percentageChange: 13.49,
+    trend: "up",
+    category: "overview",
+    chartData: stockChartOverview.BAC,
+  },
+  {
+    symbol: "R2K",
+    name: "Russ 2k",
+    fullName: "Russ 2k",
+    currentPrice: 1514.22,
+    percentageChange: 1.01,
+    trend: "down",
+    category: "overview",
+    chartData: stockChartOverview.AMZN,
   },
 ];
