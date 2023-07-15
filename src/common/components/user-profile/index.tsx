@@ -2,8 +2,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/utils/tw";
 
 export type UserProfileProps = {
-  profileImg: string;
   name: string;
+  profileImg?: string | null;
   className?: string;
 };
 
@@ -17,10 +17,12 @@ const UserProfile = ({ profileImg, name, className }: UserProfileProps) => {
   return (
     <div className={cn("flex gap-2 items-center", className)}>
       <Avatar className="w-8 h-8">
-        <AvatarImage src={profileImg} alt={`Profile Image of ${name}`} />
+        <AvatarImage src={profileImg!} alt={`Profile Image of ${name}`} />
         <AvatarFallback>{getInitialsFromName(name)}</AvatarFallback>
       </Avatar>
-      <span className="capitalize text-lg font-medium">{name}</span>
+      <span className="capitalize text-lg font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+        {name}
+      </span>
     </div>
   );
 };
