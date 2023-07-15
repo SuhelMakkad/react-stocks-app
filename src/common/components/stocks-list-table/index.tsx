@@ -7,7 +7,6 @@ import {
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
-  getPaginationRowModel,
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
@@ -83,7 +82,7 @@ export const columns: ColumnDef<Stock>[] = [
   {
     accessorKey: "chartData",
     header: () => {
-      return <span>Trend</span>;
+      return <span className="flex">Trend</span>;
     },
     cell: ({ row }) => (
       <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
@@ -121,7 +120,6 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     onColumnVisibilityChange: setColumnVisibility,
@@ -145,9 +143,9 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
           className="max-w-sm bg-inherit grow outline-none"
         />
       </div>
-      <div className="rounded-md border">
+      <div className="rounded-md border mb-4">
         <Table>
-          <TableHeader>
+          <TableHeader className="max-md:hidden">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
@@ -162,6 +160,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
               </TableRow>
             ))}
           </TableHeader>
+
           <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
@@ -182,29 +181,6 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
             )}
           </TableBody>
         </Table>
-      </div>
-      <div className="flex items-center justify-end space-x-2 py-4">
-        <div className="flex-1 text-sm text-muted-foreground">
-          {stocks.length} of {table.getFilteredRowModel().rows.length} row(s).
-        </div>
-        <div className="space-x-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}
-          >
-            Previous
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}
-          >
-            Next
-          </Button>
-        </div>
       </div>
     </div>
   );
