@@ -1,59 +1,84 @@
+name: App CI
+
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - main
 
 jobs:
-  cache-and-install:
+  buildAndTest:
+    name: Build & Test
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - name: 🏗 Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: 🏗 Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
+          cache: pnpm
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
+      - name: 🗂️ Install dependencies
+        run: pnpm i
+
+      - name: 🔨 Build
+        run: pnpm run build
+
+      # Upload dist artifacts
+      - uses: actions/upload-artifact@v3
         with:
-          version: 7
-          run_install: false
+          name: dist
+          path: dist/
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
-
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
+      # Upload coverage artifacts
+      - uses: actions/upload-artifact@v3
         with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          name: coverage
+          path: coverage/lcov.info
 
-      - name: Install dependencies
-        run: pnpm install
+  coverage:
+    name: Coverage Analysis
+    needs: buildAndTest
+    runs-on: ubuntu-latest
+    steps:
+      # Download coverage artifacts
+      - uses: actions/download-artifact@v3
+        with:
+          name: coverage
+
+      - name: 📈 Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: lcov.info
 
   deploy:
     name: Deploy
-    needs: cache-and-install
-    runs-on: ubuntu-latest
+    # Deploy only for main branch
     if: github.ref == 'refs/heads/main'
-
+    needs: buildAndTest
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # Manual deployment
+    # See https://devblogs.microsoft.com/devops/i-need-manual-approvers-for-github-actions-and-i-got-them-now/
+    environment:
+      name: pchmn.github.io/vite-react-ts-ghactions-template
+      url: https://pchmn.github.io/vite-react-ts-ghactions-template/
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
+      # Download dist artifacts
+      - uses: actions/download-artifact@v3
         with:
-          name: production-files
-          path: ./dist
+          name: dist
+          path: dist/
 
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: dist
