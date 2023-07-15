@@ -1,9 +1,13 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+
+import { ChevronLeftCircleIcon } from "lucide-react";
 
 import ThemeToggle from "@/components/theme-toggle";
-import { stocks } from "@/assets/data/stocks";
-import { formateAmount } from "@/utils/index";
 import TrendChip from "@/components/trend-chip";
+
+import { formateAmount } from "@/utils/index";
+
+import { stocks } from "@/assets/data/stocks";
 
 const getStockDetails = (symbol: string) => {
   return stocks.find((stock) => stock.symbol?.toLowerCase() === symbol?.toLowerCase());
@@ -21,10 +25,15 @@ const StockDetailsPage = () => {
   return (
     <div className="container mx-auto pt-4">
       <section className="flex justify-between items-center gap-2 mb-8">
-        <header>
-          <h1 className="text-lg font-semibold tracking-tight">{stock.symbol}</h1>
-          <span className="block text-muted-foreground capitalize">{stock.fullName}</span>
-        </header>
+        <div className="flex gap-2 items-center">
+          <Link to={"/"}>
+            <ChevronLeftCircleIcon className="block md:hidden opacity-50 w-9 h-9" />
+          </Link>
+          <header className="leading-none">
+            <h1 className="text-lg font-semibold tracking-tight">{stock.symbol}</h1>
+            <span className="block text-muted-foreground capitalize">{stock.fullName}</span>
+          </header>
+        </div>
 
         <span className="text-muted-foreground">
           <ThemeToggle />
