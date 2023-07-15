@@ -1,11 +1,13 @@
+import TrendChip from "@/components/trend-chip";
+import type { Trend } from "@/components/trend-chip";
+
 import { formateAmount } from "@/utils/index";
-import { cn } from "@/utils/tw";
 
 export type OverviewCardProps = {
   title: string;
   currentPrice: number;
   percentageChange: number;
-  trend: "up" | "down";
+  trend: Trend;
 };
 
 const OverviewCard = ({ title, currentPrice, percentageChange, trend }: OverviewCardProps) => {
@@ -17,15 +19,7 @@ const OverviewCard = ({ title, currentPrice, percentageChange, trend }: Overview
 
       <div className="flex items-center gap-3">
         <h4 className="text-xl font-bold">{formateAmount(currentPrice)}</h4>
-        <span
-          className={cn(
-            "text-xs font-semibold px-2 py-px rounded-full",
-            trend === "up" ? "bg-green-100 text-green-950" : "bg-red-100 text-red-950"
-          )}
-        >
-          {trend === "up" ? "+" : "-"}
-          {percentageChange}%
-        </span>
+        <TrendChip trend={trend} percentageChange={percentageChange} />
       </div>
     </div>
   );

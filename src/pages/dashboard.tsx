@@ -1,7 +1,10 @@
 import OverviewCard from "@/components/overview-card";
 
-import { overviewData } from "@/assets/data/overview";
 import ThemeToggle from "@/components/theme-toggle";
+import StocksListTable from "@/components/stocks-list-table";
+
+import { overviewData } from "@/assets/data/overview";
+import { stocks } from "@/assets/data/stocks";
 
 const Dashboard = () => {
   return (
@@ -16,13 +19,17 @@ const Dashboard = () => {
       <div className="flex md:grid gap-2 md:gap-4 grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 overflow-auto hide-scroll">
         {overviewData.map((overview) => (
           <OverviewCard
-            key={overview.title}
-            title={overview.title}
+            key={overview.symbol}
+            title={overview.name}
             currentPrice={overview.currentPrice}
             percentageChange={overview.percentageChange}
             trend={overview.trend}
           />
         ))}
+      </div>
+
+      <div className="mt-16">
+        <StocksListTable stocks={stocks} />
       </div>
     </div>
   );
