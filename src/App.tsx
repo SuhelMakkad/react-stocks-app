@@ -7,10 +7,11 @@ import PortfolioPage from "@/pages/portfolio-page";
 import NewsPage from "@/pages/news-page";
 
 import { Toaster } from "@/components/ui/toaster";
+import { BASE_PATH } from "@/utils/index";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={BASE_PATH}>
       <MainLayout>
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
