@@ -5,8 +5,11 @@ import path from "path";
 
 const getPath = (route: string) => path.resolve(__dirname, route);
 
+const BASE_PATH = "/react-stocks-app/";
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: BASE_PATH,
   resolve: {
     alias: {
       "@/layouts": getPath("./src/layouts"),
