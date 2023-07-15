@@ -1,62 +1,51 @@
-name: App CI
-
+name: github pages
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
-
+      - main # default branch
 jobs:
-  build:
-    name: Build
+  # https://github.com/marketplace/actions/setup-pnpm#use-cache-to-reduce-installation-time
+  cache-install-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: 🏗 Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
-      - name: 🏗 Setup Node
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: pnpm
+          node-version: 16
 
-      - name: 🗂️ Install dependencies
-        run: pnpm i
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
 
-      - name: 🔨 Build
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      # Cache install done
+
+      - name: build
         run: pnpm run build
 
-      # Upload dist artifacts
-      - uses: actions/upload-artifact@v3
-        with:
-          name: dist
-          path: ./dist
-
-  deploy:
-    name: Deploy
-    # Deploy only for main branch
-    if: github.ref == 'refs/heads/main'
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    # Manual deployment
-    # See https://devblogs.microsoft.com/devops/i-need-manual-approvers-for-github-actions-and-i-got-them-now/
-    environment:
-      name: suhelmakkad.github.io/react-stocks-app
-      url: https://suhelmakkad.github.io/react-stocks-app/
-
-    steps:
-      # Download dist artifacts
-      - uses: actions/download-artifact@v3
-        with:
-          name: dist
-          path: ./dist
-
-      - name: 🚀 Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
