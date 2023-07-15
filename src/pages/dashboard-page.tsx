@@ -20,7 +20,7 @@ const Dashboard = () => {
         <h3 className="text-sm font-semibold text-muted-foreground">
           Quick Overview of the Market
         </h3>
-        <div className="flex md:grid gap-2 md:gap-4 grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 overflow-auto hide-scroll">
+        <div className="flex md:grid gap-2 md:gap-4 grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 overflow-auto hide-scroll -mx-3 md:mx-0 px-3 md:px-0">
           {overviewData.map((overview) => (
             <OverviewCard
               key={overview.symbol}
