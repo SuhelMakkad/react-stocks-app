@@ -1,8 +1,9 @@
 import { usePortfolioStore } from "@/store/portfolio-store";
+
 import ThemeToggle from "@/components/theme-toggle";
+import StocksListTable from "@/components/stocks-list-table";
 
 import { stocks } from "@/assets/data/stocks";
-import StocksListTable from "@/components/stocks-list-table";
 
 const getStocksFromSymbols = (symbols: string[]) => {
   if (!symbols) return [];

@@ -1,0 +1,893 @@
+[
+  {
+    "id": "5b407667-6e13-4dcc-9e8b-1b1f6e6e2f77",
+    "title": "Cathie Wood’s ARK ETFs sold $50 million in Coinbase stock",
+    "description": "Cathie Wood's ARK ETFs sold nearly half-a-million Coinbase shares, but the cryptocurrency exchange remained among the top holdings of some the ETFs.",
+    "keywords": "article_normal, bitcoin, crypto, cathiewood, Trusts/Funds/Financial Vehicles, Financial Investment Services, Securities/Commodity Exchange Activities, Investment Advice/Research Services, Market Research/Public Relations, Public Relations, Advertising/Marketing/Public Relations, Business/Consumer Services, Banking/Credit, Cryptocurrency Exchanges, Exchange Traded Funds, Financial Services, Financial Technology, Investing/Securities, Technology, Virtual Currencies/Cryptocurrencies, Regulation/Government Policy, Ownership Changes, Acquisitions/Mergers/Shareholdings, Corporate Actions, Corporate/Industrial News, Equity Markets, Money/Currency Markets, Foreign Exchange Markets, Commodity/Financial Market News, Cryptocurrency Markets, Content Types, Factiva Filters, C&E Exclusion Filter, C&E Industry News Filter, Bitcoin, CathieWood, Coinbase Global Inc., COIN, Bitcoin USD, BTCUSD, Robinhood Markets Inc., HOOD, BlackRock Inc., BLK, Meta Platforms Inc., META, SPX, ARK Innovation ETF, ARKK, Ark Fintech Innovation ETF, ARKF, ARK Next Generation Internet ETF, ARKW, S&P 500 Index, regulation, government policy, ownership changes, acquisitions, mergers, shareholdings, corporate actions, corporate, industrial news, equity markets, money, currency markets, foreign exchange markets, commodity, financial market news, cryptocurrency markets, content types, factiva filters, c&e exclusion filter, c&e industry news filter, trusts, funds, financial vehicles, financial investment services, securities, commodity exchange activities, investment advice, research services, market research, public relations, advertising, marketing, business, consumer services, banking, credit, cryptocurrency exchanges, exchange traded funds, financial services, financial technology, investing, technology, virtual currencies, cryptocurrencies",
+    "snippet": "Cathie Wood’s ARK Invest cashed in on the recent record really in Coinbase Global Inc.’s stock by selling nearly half-a-million shares, but the cryptocurren...",
+    "url": "https://www.marketwatch.com/story/cathie-woods-ark-etfs-sold-50-million-in-coinbase-stock-7ffd1c3b",
+    "image_url": "https://images.mktw.net/im-795332/social",
+    "language": "en",
+    "published_at": "2023-07-15T15:25:00.000000Z",
+    "source": "marketwatch.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "BLK",
+        "name": "BlackRock, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 19.579304,
+        "sentiment_score": 0.6124,
+        "highlights": [
+          {
+            "highlight": "She is currently pushing, with asset manager 21Shares, to launch a bitcoin ETF, as are other asset managers such as <em>BlackRock</em> <em>Inc</em>. BLK, -1.59%",
+            "sentiment": 0.6124,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "72a711e0-7cfb-4f62-aaeb-ebc4a7c5beac",
+    "title": "Tesla builds first Cybertruck after two years of delays By Reuters",
+    "description": "Tesla builds first Cybertruck after two years of delays",
+    "keywords": "",
+    "snippet": "Published Jul 15, 2023 11:16AM ET\n\n© Reuters. FILE PHOTO: Tesla's Cybertruck is displayed at Manhattan's Meatpacking District in New York City, U.S., May 8, 20...",
+    "url": "https://www.investing.com/news/stock-market-news/tesla-builds-first-cybertruck-after-two-years-of-delays-3126368",
+    "image_url": "https://i-invdn-com.investing.com/news/LYNXNPEC4317M_L.jpg",
+    "language": "en",
+    "published_at": "2023-07-15T15:20:45.000000Z",
+    "source": "investing.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "F",
+        "name": "Ford Motor Company",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Consumer Cyclical",
+        "match_score": 20.718988,
+        "sentiment_score": 0.7553,
+        "highlights": [
+          {
+            "highlight": "The Cybertruck launch will give Tesla an EV entrant in one of the most profitable segments of the U.S. market and a competitor to electric pickups from the likes of <em>Ford</em> <em>Motor</em>(NYSE: .N) and Rivian Automotive (RIVN.O), both of which have launched models in still-limited numbers.",
+            "sentiment": 0.7553,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "aec1907a-11de-4ad7-bdfe-1df5a31afdea",
+    "title": "SENTINELONE DEADLINE ALERT: Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses Exceeding $100,000 In SentinelOne To Contact Him Directly To Discuss Their Option",
+    "description": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against SentinelOne, Inc.   and reminds investors of the...",
+    "keywords": "Markets",
+    "snippet": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against SentinelOne, Inc...",
+    "url": "https://www.marketscreener.com/quote/stock/SENTINELONE-INC-124221575/news/SENTINELONE-DEADLINE-ALERT-Securities-Litigation-Partner-James-Josh-Wilson-Encourages-Investors-W-44344510/",
+    "image_url": "https://www.marketscreener.com/images/twitter_MS_fdblanc.png",
+    "language": "en",
+    "published_at": "2023-07-15T15:01:07.000000Z",
+    "source": "marketscreener.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "S",
+        "name": "SentinelOne, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Technology",
+        "match_score": 59.33499,
+        "sentiment_score": 0.118386,
+        "highlights": [
+          {
+            "highlight": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against <em>SentinelOne</em>, <em>Inc</em>.",
+            "sentiment": 0.296,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "(\"<em>SentinelOne</em>\" or the \"Company\") (<em>NYSE</em>: <em>S</em>) and reminds investors of the August 7, 2023 deadline to seek the role of lead plaintiff in a federal securities class action that has been filed against the Company.",
+            "sentiment": 0.296,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "If you suffered losses exceeding $100,000 investing in <em>SentinelOne</em> stock or options between June 1, 2022 and June 1, 2023and would like to discuss your legal rights, call Faruqi & Faruqi partner Josh Wilson directly at 877-247-4292 or 212-983-9330 (Ext. 1310). You may also click here for additional information: www.faruqilaw.com/S.",
+            "sentiment": -0.4404,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "On June 1, 2023, after the market closed, <em>SentinelOne</em> published a press release titled \"<em>SentinelOne</em> Announces First Quarter Fiscal Year 2024 Financial Results.\"",
+            "sentiment": 0,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "In a shareholder letter published the same day, <em>SentinelOne</em> further explained that \"we . . . discovered historical upsell and renewal recording inaccuracies relating to ARR on certain subscription and consumption contracts, which are now corrected\" and that \"[w]e are applying a comparable estimated adjustment to the remaining quarters in fiscal year",
+            "sentiment": 0.2732,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "View original content to download multimedia:https://www.prnewswire.com/news-releases/<em>sentinelone</em>-deadline-alert-securities-litigation-partner-james-josh-wilson-encourages-investors-who-suffered-losses-exceeding-100-000-in-<em>sentinelone</em>-to-contact-him-directly-to-discuss-their-options-301877772.html\n\nSOURCE Faruqi & Faruqi, LLP",
+            "sentiment": 0.3182,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "<em>SENTINELONE</em> DEADLINE ALERT: Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses Exceeding $100,000 In <em>SentinelOne</em> To Contact Him Directly To Discuss Their Option",
+            "sentiment": 0.0857,
+            "highlighted_in": "title"
+          }
+        ]
+      }
+    ],
+    "similar": [
+      {
+        "id": "dad322d3-d3bd-4249-972b-6621c5aedc60",
+        "title": "SENTINELONE DEADLINE ALERT: Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses Exceeding $100,000 In SentinelOne To Contact Him Directly To Discuss Their Option",
+        "description": "/PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against SentinelOne, Inc. (\"SentinelOne\" or the...",
+        "keywords": "Faruqi & Faruqi, LLP, Banking & Financial Services",
+        "snippet": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against SentinelOne, Inc...",
+        "url": "https://www.prnewswire.com/news-releases/sentinelone-deadline-alert-securities-litigation-partner-james-josh-wilson-encourages-investors-who-suffered-losses-exceeding-100-000-in-sentinelone-to-contact-him-directly-to-discuss-their-options-301877772.html",
+        "image_url": "https://mma.prnewswire.com/media/1959220/Logo_11_30_2022.jpg?p=facebook",
+        "language": "en",
+        "published_at": "2023-07-15T15:00:00.000000Z",
+        "source": "prnewswire.com",
+        "relevance_score": null,
+        "entities": [
+          {
+            "symbol": "S",
+            "name": "SentinelOne, Inc.",
+            "exchange": "NYSE",
+            "exchange_long": "New York Stock Exchange",
+            "country": "us",
+            "type": "equity",
+            "industry": "Technology",
+            "match_score": 59.33904,
+            "sentiment_score": 0.085083,
+            "highlights": [
+              {
+                "highlight": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against <em>SentinelOne</em>, <em>Inc</em>.",
+                "sentiment": 0.296,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "(\"<em>SentinelOne</em>\" or the \"Company\") (<em>NYSE</em>: <em>S</em>) and reminds investors of the August 7, 2023 deadline to seek the role of lead plaintiff in a federal securities class action that has been filed against the Company.",
+                "sentiment": 0.296,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "If you suffered losses exceeding $100,000 investing in <em>SentinelOne</em> stock or options between June 1, 2022 and June 1, 2023 and would like to discuss your legal rights, call Faruqi & Faruqi partner Josh Wilson directly at 877-247-4292 or 212-983-9330 (Ext. 1310). You may also click here for additional information: www.faruqilaw.com/S.",
+                "sentiment": -0.4404,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "On June 1, 2023, after the market closed, <em>SentinelOne</em> published a press release titled \"<em>SentinelOne</em> Announces First Quarter Fiscal Year 2024 Financial Results.\"",
+                "sentiment": 0,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "In a shareholder letter published the same day, <em>SentinelOne</em> further explained that \"we . . . discovered historical upsell and renewal recording inaccuracies relating to ARR on certain subscription and consumption contracts, which are now corrected\" and that \"[w]e are applying a comparable estimated adjustment to the remaining quarters in fiscal year",
+                "sentiment": 0.2732,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "<em>SENTINELONE</em> DEADLINE ALERT: Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses Exceeding $100,000 In <em>SentinelOne</em> To Contact Him Directly To Discuss Their Option",
+                "sentiment": 0.0857,
+                "highlighted_in": "title"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "29e4bb93-1df9-4c38-bafe-c44788a10dff",
+        "title": "MALLINCKRODT DEADLINE ALERT: Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses Exceeding $100,000 In Mallinckrodt To Contact Him Directly To Discuss Their Opti",
+        "description": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against Mallinckrodt plc   and reminds investors of the...",
+        "keywords": "Markets",
+        "snippet": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against Mallinckrodt plc...",
+        "url": "https://www.marketscreener.com/quote/stock/MALLINCKRODT-PLC-139700961/news/MALLINCKRODT-DEADLINE-ALERT-Securities-Litigation-Partner-James-Josh-Wilson-Encourages-Investors-44344397/",
+        "image_url": "https://www.marketscreener.com/images/twitter_MS_fdnoir.png",
+        "language": "en",
+        "published_at": "2023-07-15T12:01:05.000000Z",
+        "source": "marketscreener.com",
+        "relevance_score": null,
+        "entities": [
+          {
+            "symbol": "MNKKQ",
+            "name": "Mallinckrodt plc",
+            "exchange": "OTC",
+            "exchange_long": "Over-the-counter Markets",
+            "country": "us",
+            "type": "equity",
+            "industry": "Healthcare",
+            "match_score": 53.63012,
+            "sentiment_score": 0.414427,
+            "highlights": [
+              {
+                "highlight": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against <em>Mallinckrodt</em> <em>plc</em> (\"<em>Mallinckrodt</em>\" or the \"Company\") (NYSE: MNK) and reminds investors of the September 5, 2023 deadline to seek the role of lead plaintiff in a federal securities class action that has been filed",
+                "sentiment": 0.5267,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "If you suffered losses exceeding $100,000 investing in <em>Mallinckrodt</em> stock or options between June 17, 2022 and June 14, 2023and would like to discuss your legal rights, call Faruqi & Faruqi partner Josh Wilson directly at 877-247-4292 or 212-983-9330 (Ext. 1310). You may also click here for additional information: www.faruqilaw.com/MNK.",
+                "sentiment": -0.4404,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "<em>Mallinckrodt</em> develops, manufactures, markets, and distributes specialty pharmaceutical products and therapies, including certain opioid products, in the U.S., Europe, the Middle East, Africa, and internationally.",
+                "sentiment": 0.2732,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "In October 2020, <em>Mallinckrodt</em> filed for Chapter 11 bankruptcy protection while agreeing to settle its alleged role in the U.S. national opioid crisis for approximately $1.7 billion (the \"Opioid Settlement\").",
+                "sentiment": -0.4019,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "As part of its Chapter 11 exit plan, <em>Mallinckrodt</em> agreed to make nine payments over eight years to an opioid-victims compensation trust (the \"Trust\") for the Opioid Settlement. The Company made its first payment of $450 million to the Trust as it emerged from Chapter 11 bankruptcy protection in June 2022.",
+                "sentiment": 0.8271,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "On June 2, 2023, The Wall Street Journal reported that <em>Mallinckrodt</em> was again exploring bankruptcy as its next $200 million payment to the Trust for the Opioid Settlement came due.\n\nOn this news, Mallinckrodt's ordinary share price fell $0.98 per share, or 40%, to close at $1.47 per share on June 5, 2023, the next trading day.",
+                "sentiment": 0.836,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "On June 15, 2023, <em>Mallinckrodt</em> disclosed in a Securities and Exchange Commission ('SEC\") filing that it had determined not to make interest payments on two bonds due that day and may need to file for bankruptcy.\n\nOn this news, Mallinckrodt's ordinary share price fell $0.39 per share, or 30.95%, to close at $0.87 per share on June 15, 2023.",
+                "sentiment": 0.8231,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "On June 16, 2023, <em>Mallinckrodt</em> disclosed in an SEC filing that the Company and the Trust had agreed to extend the deadline for the Company's $200 million payment to the Trust for the Opioid Settlement from June 16, 2023 to June 23, 2023, while reiterating that the Company may need to file for bankruptcy.",
+                "sentiment": 0.8555,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "Then, on June 23, 2023, <em>Mallinckrodt</em> disclosed in an SEC filing that the Company and the Trust had again agreed to extend the deadline for the Company's $200 million payment to the Trust from June 23, 2023 to June 30, 2023, while reiterating that the Company may still need to file for bankruptcy.",
+                "sentiment": 0.8555,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "View original content to download multimedia:https://www.prnewswire.com/news-releases/<em>mallinckrodt</em>-deadline-alert-securities-litigation-partner-james-josh-wilson-encourages-investors-who-suffered-losses-exceeding-100-000-in-<em>mallinckrodt</em>-to-contact-him-directly-to-discuss-their-options-301877764.html\n\nSOURCE Faruqi & Faruqi, LLP",
+                "sentiment": 0.3182,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "<em>MALLINCKRODT</em> DEADLINE ALERT: Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses Exceeding $100,000 In <em>Mallinckrodt</em> To Contact Him Directly To Discuss Their Opti",
+                "sentiment": 0.0857,
+                "highlighted_in": "title"
+              }
+            ]
+          },
+          {
+            "symbol": "MNK",
+            "name": "Mallinckrodt plc",
+            "exchange": "NYSE",
+            "exchange_long": "New York Stock Exchange",
+            "country": "us",
+            "type": "equity",
+            "industry": "Healthcare",
+            "match_score": 69.2088,
+            "sentiment_score": 0.414427,
+            "highlights": [
+              {
+                "highlight": "NEW YORK, July 15, 2023 /PRNewswire/ -- Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against <em>Mallinckrodt</em> <em>plc</em> (\"<em>Mallinckrodt</em>\" or the \"Company\") (<em>NYSE</em>: <em>MNK</em>) and reminds investors of the September 5, 2023 deadline to seek the role of lead plaintiff in a federal securities class action that has been filed",
+                "sentiment": 0.5267,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "If you suffered losses exceeding $100,000 investing in <em>Mallinckrodt</em> stock or options between June 17, 2022 and June 14, 2023and would like to discuss your legal rights, call Faruqi & Faruqi partner Josh Wilson directly at 877-247-4292 or 212-983-9330 (Ext. 1310). You may also click here for additional information: www.faruqilaw.com/MNK.",
+                "sentiment": -0.4404,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "<em>Mallinckrodt</em> develops, manufactures, markets, and distributes specialty pharmaceutical products and therapies, including certain opioid products, in the U.S., Europe, the Middle East, Africa, and internationally.",
+                "sentiment": 0.2732,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "In October 2020, <em>Mallinckrodt</em> filed for Chapter 11 bankruptcy protection while agreeing to settle its alleged role in the U.S. national opioid crisis for approximately $1.7 billion (the \"Opioid Settlement\").",
+                "sentiment": -0.4019,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "As part of its Chapter 11 exit plan, <em>Mallinckrodt</em> agreed to make nine payments over eight years to an opioid-victims compensation trust (the \"Trust\") for the Opioid Settlement. The Company made its first payment of $450 million to the Trust as it emerged from Chapter 11 bankruptcy protection in June 2022.",
+                "sentiment": 0.8271,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "On June 2, 2023, The Wall Street Journal reported that <em>Mallinckrodt</em> was again exploring bankruptcy as its next $200 million payment to the Trust for the Opioid Settlement came due.\n\nOn this news, Mallinckrodt's ordinary share price fell $0.98 per share, or 40%, to close at $1.47 per share on June 5, 2023, the next trading day.",
+                "sentiment": 0.836,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "On June 15, 2023, <em>Mallinckrodt</em> disclosed in a Securities and Exchange Commission ('SEC\") filing that it had determined not to make interest payments on two bonds due that day and may need to file for bankruptcy.\n\nOn this news, Mallinckrodt's ordinary share price fell $0.39 per share, or 30.95%, to close at $0.87 per share on June 15, 2023.",
+                "sentiment": 0.8231,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "On June 16, 2023, <em>Mallinckrodt</em> disclosed in an SEC filing that the Company and the Trust had agreed to extend the deadline for the Company's $200 million payment to the Trust for the Opioid Settlement from June 16, 2023 to June 23, 2023, while reiterating that the Company may need to file for bankruptcy.",
+                "sentiment": 0.8555,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "Then, on June 23, 2023, <em>Mallinckrodt</em> disclosed in an SEC filing that the Company and the Trust had again agreed to extend the deadline for the Company's $200 million payment to the Trust from June 23, 2023 to June 30, 2023, while reiterating that the Company may still need to file for bankruptcy.",
+                "sentiment": 0.8555,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "View original content to download multimedia:https://www.prnewswire.com/news-releases/<em>mallinckrodt</em>-deadline-alert-securities-litigation-partner-james-josh-wilson-encourages-investors-who-suffered-losses-exceeding-100-000-in-<em>mallinckrodt</em>-to-contact-him-directly-to-discuss-their-options-301877764.html\n\nSOURCE Faruqi & Faruqi, LLP",
+                "sentiment": 0.3182,
+                "highlighted_in": "main_text"
+              },
+              {
+                "highlight": "<em>MALLINCKRODT</em> DEADLINE ALERT: Securities Litigation Partner James (Josh) Wilson Encourages Investors Who Suffered Losses Exceeding $100,000 In <em>Mallinckrodt</em> To Contact Him Directly To Discuss Their Opti",
+                "sentiment": 0.0857,
+                "highlighted_in": "title"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7e45d247-3662-4019-b840-33cb3cbd31be",
+    "title": "A millennial entrepreneur who owns 2 small businesses says he lives in his parents’ basement because he can’t get a mortgage and Canada’s housing market is so unaffordable",
+    "description": "This serial entrepreneur owns two small businesses and yet the bank won’t give him a mortgage.",
+    "keywords": "",
+    "snippet": "Chace Barber is 35 years old and you could call him a job creator. The serial entrepreneur owns two small businesses, has 11 full-time employees and has raised ...",
+    "url": "https://fortune.com/2023/07/15/unaffordable-canada-housing-market-lives-in-parents-basement-real-estate/",
+    "image_url": "https://content.fortune.com/wp-content/uploads/2023/07/Canada.jpg?resize=1200,600",
+    "language": "en",
+    "published_at": "2023-07-15T14:55:28.000000Z",
+    "source": "fortune.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "RY",
+        "name": "Royal Bank of Canada",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 20.323204,
+        "sentiment_score": -0.1872,
+        "highlights": [
+          {
+            "highlight": "Canada’s housing market is still severely unaffordable for some buyers, despite a recent (and somewhat short-lived) decline in home prices from the peak and fewer home sales across the country as the Bank of Canada raised interest rates—which “barely makes a dent in reversing the enormous loss of affordability since mid-2020,” according to the <em>Royal</em>",
+            "sentiment": -0.3744,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "<em>Bank</em> <em>of</em> <em>Canada</em> (RBC).",
+            "sentiment": 0,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "1e030a38-595c-4c47-9208-50b0283e9558",
+    "title": "Wedgewood Partners Second Quarter 2023 Client Letter",
+    "description": "Wedgewood published its Q2 2023 newsletter that reviews recent financial market and investment activity, and also looks ahead. Click here to read the full fund",
+    "keywords": "",
+    "snippet": "sankai\n\nReview and Outlook\n\nWedgewood Composite Net 2Q 8.1 YTD 18.7 1-Year 19.7 3-Year 13.3 5-Year 13.5 Standard & Poor's 500 Index (SP500, SPX) 8.7 16.9 19.6 1...",
+    "url": "https://seekingalpha.com/article/4617310-wedgewood-partners-second-quarter-2023-client-letter",
+    "image_url": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1388369589/image_1388369589.jpg?io=getty-c-w1536",
+    "language": "en",
+    "published_at": "2023-07-15T14:45:00.000000Z",
+    "source": "seekingalpha.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "FRC",
+        "name": "First Republic Bank",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 6.756531,
+        "sentiment_score": 0.3818,
+        "highlights": [
+          {
+            "highlight": "During the quarter we sold <em>First</em> <em>Republic</em> <em>Bank</em> (OTCPK:FRCB), trimmed Meta Platforms and added to PayPal.\n\nQ2 Top Contributors Avg. Wgt. Contribution to Return Meta Platforms 8.53 2.80 Apple 7.82 1.37 Alphabet 7.69 1.17 Copart 5.53 1.13 Microsoft 5.62 1.05 Click to enlarge\n\nQ2 Bottom Contributors\n\nQ2 Top Contributors Avg. Wgt.",
+            "sentiment": 0.3818,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "3c33855c-d091-401c-af11-a51395dffd96",
+    "title": "Stocks To Watch: Tesla Earnings, Labor Strikes And Russell 2000 Revival In The Spotlight",
+    "description": "Get ahead of the market by subscribing to Seeking Alpha's Stocks to Watch, a preview of key events scheduled for the coming week.",
+    "keywords": "",
+    "snippet": "Get ahead of the market by subscribing to Seeking Alpha's Stocks to Watch, a preview of key events scheduled for the coming week. The newsletter keeps you infor...",
+    "url": "https://seekingalpha.com/article/4617194-stocks-to-watch-tesla-earnings-labor-strikes-and-russell-2000-revival-in-the-spotlight",
+    "image_url": "https://static.seekingalpha.com/assets/og_image_1200-29b2bfe1a595477db6826bd2126c63ac2091efb7ec76347a8e7f81ba17e3de6c.png",
+    "language": "en",
+    "published_at": "2023-07-15T14:30:00.000000Z",
+    "source": "seekingalpha.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "ABT",
+        "name": "Abbott Laboratories",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Healthcare",
+        "match_score": 13.855053,
+        "sentiment_score": 0,
+        "highlights": [
+          {
+            "highlight": "Earnings spotlight: Thursday, July 20 - Johnson & Johnson (JNJ), <em>Abbott</em> <em>Laboratories</em> (ABT), Taiwan Semiconductor Manufacturing (TSM), Philip Morris International (PM), Travelers (TRV), American Airlines (AAL), Capital One (COF), and CSX (CSX).",
+            "sentiment": 0,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "USB",
+        "name": "U.S. Bancorp",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 11.19595,
+        "sentiment_score": 0.4215,
+        "highlights": [
+          {
+            "highlight": "Earnings spotlight: Wednesday, July 19 - Goldman Sachs (GS), Tesla (TSLA), Netflix (NFLX), IBM (IBM), <em>U.S</em>. <em>Bancorp</em> (USB), United Airlines (UAL), Las Vegas Sands (LVS), and Nasdaq (NDAQ).",
+            "sentiment": 0.4215,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "UPS",
+        "name": "United Parcel Service, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Industrials",
+        "match_score": 13.005112,
+        "sentiment_score": -0.3182,
+        "highlights": [
+          {
+            "highlight": "At the top of the list is <em>United</em> <em>Parcel</em> <em>Service</em> (<em>NYSE:UPS</em>), which is facing a contract expiration date with the Teamsters Union of July 31. The Teamsters union has claimed UPS (UPS) walked away from negotiations over a new contract and has \"clearly\" chosen to go down the wrong road.",
+            "sentiment": -0.3182,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "JNJ",
+        "name": "Johnson & Johnson",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Healthcare",
+        "match_score": 10.139523,
+        "sentiment_score": 0,
+        "highlights": [
+          {
+            "highlight": "Earnings spotlight: Thursday, July 20 - <em>Johnson</em> & <em>Johnson</em> (JNJ), Abbott Laboratories (ABT), Taiwan Semiconductor Manufacturing (TSM), Philip Morris International (PM), Travelers (TRV), American Airlines (AAL), Capital One (COF), and CSX (CSX).",
+            "sentiment": 0,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "STLA",
+        "name": "Stellantis N.V.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Consumer Cyclical",
+        "match_score": 12.267202,
+        "sentiment_score": -0.39115,
+        "highlights": [
+          {
+            "highlight": "<em>Stellantis</em> (<em>NYSE:STLA</em>) will be the lead negotiator with the UAW this cycle to set the stage for later talks with General Motors (GM) and Ford (F).",
+            "sentiment": 0,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "This time around, McNally thinks <em>Stellantis</em> (STLA) is the North American automaker with the most risk, while suppliers Mobileye (MBLY) and Magna International (MGA) are the suppliers that could see some selling pressure around fears of a long strike.",
+            "sentiment": -0.7823,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "SONY",
+        "name": "Sony Group Corporation",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Technology",
+        "match_score": 5.959669,
+        "sentiment_score": 0.8555,
+        "highlights": [
+          {
+            "highlight": "That wouldn't only serve as the best opening in Cruise's seven-film series, it would also mark the best summer opening since June 2 brought the animated hit Spider-Man: Across the Spider-Verse (<em>SONY</em>), which opened to $120.7M and has become the year's second-biggest domestic film.",
+            "sentiment": 0.8555,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "02064175-2b58-4acd-8659-13f107d772ca",
+    "title": "Crypto, lenders top week's best-performing financial stocks; insurers slip (NASDAQ:COIN)",
+    "description": "Two crypto-exposed stocks and three lending companies topped this week's best-performing financial stocks",
+    "keywords": "",
+    "snippet": "Two crypto-exposed stocks and three lending companies topped this week's best-performing financial stocks. On Thursday, a judge's ruling on the trading of crypt...",
+    "url": "https://seekingalpha.com/news/3987814-crypto-lenders-top-weeks-best-performing-financial-stocks-insurers-slip",
+    "image_url": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/905029148/image_905029148.jpg?io=getty-c-w750",
+    "language": "en",
+    "published_at": "2023-07-15T14:19:00.000000Z",
+    "source": "seekingalpha.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "RKT",
+        "name": "Rocket Companies, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 25.467775,
+        "sentiment_score": 0.7906,
+        "highlights": [
+          {
+            "highlight": "Online lender <em>Rocket</em> <em>Companies</em> (<em>NYSE:RKT</em>), known for Rocket Mortgages, increased 18% and wholesale mortgage lender UWM Holdings (NYSE:UWMC) gained 17% for the week.\n\nA large trust bank that posted weaker-than-expected Q2 revenue and insurers led the financial stocks that dropped the most.",
+            "sentiment": 0.7906,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "PGR",
+        "name": "The Progressive Corporation",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 14.705879,
+        "sentiment_score": -0.5994,
+        "highlights": [
+          {
+            "highlight": "Progressive (<em>NYSE:PGR</em>) stock slid 11% for the week after the property & casualty insurer posted lower-than-expected Q2 earnings and rising combined ratio. Subsequently, Wells Fargo downgraded the stock to Equal Weight from Overweight.",
+            "sentiment": -0.5994,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "STT",
+        "name": "State Street Corporation",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 22.394024,
+        "sentiment_score": 0.4939,
+        "highlights": [
+          {
+            "highlight": "Trust bank <em>State</em> <em>Street</em> (<em>NYSE:STT</em>) dipped 7.8% for the week after Q2 revenue disappointed as net interest fell during the quarter.\n\nProgressive peer Allstate (NYSE:ALL) fell 6.6% during the week, and insurer Kemper (NYSE:KMPR) dropped 5.5%.",
+            "sentiment": 0.4939,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "KMPR",
+        "name": "Kemper Corporation",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 27.097149,
+        "sentiment_score": 0,
+        "highlights": [
+          {
+            "highlight": "Progressive peer Allstate (NYSE:ALL) fell 6.6% during the week, and insurer <em>Kemper</em> (<em>NYSE:KMPR</em>) dropped 5.5%.\n\nRounding out the five biggest decliners of the week is Banco BBVA Argentina (NYSE:BBAR), which declined 5.2%.\n\nOther Notable Financial Stories of the Week:",
+            "sentiment": 0,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "e703136a-e3c6-4f58-b8aa-76c4d2cb775e",
+    "title": "'He's Been Paralyzed': This Former Anheuser-Busch Exec Says The Current CEO Has Failed To Fix The Bud Light Crisis — Must Quit Now And Let Someone Else Save The 'Sinking Ship'",
+    "description": "Anheuser-Busch InBev (NYSE:BUD), the multinational brewing company behind Bud Light, is facing a crisis, and a former executive has offered his perspective on the situation. \"It looks like the battle has already been lost,\" Anson Frericks, former president of Anheuser Busch Sales & Distribution Co., wrote in a recent column for the Daily Mail. In April, Bud Light partnered with transgender social media influencer Dylan Mulvaney, who has 10.7 million followers on TikTok. The collaboration trigger",
+    "keywords": "",
+    "snippet": "Anheuser-Busch InBev (NYSE:BUD), the multinational brewing company behind Bud Light, is facing a crisis, and a former executive has offered his perspective on t...",
+    "url": "https://finance.yahoo.com/news/hes-paralyzed-former-anheuser-busch-141313745.html",
+    "image_url": "https://media.zenfs.com/en/Benzinga/ffcc6af0dbe24fa00d56f382637b23ea",
+    "language": "en",
+    "published_at": "2023-07-15T14:13:13.000000Z",
+    "source": "finance.yahoo.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "BLK",
+        "name": "BlackRock, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 13.274107,
+        "sentiment_score": 0.3612,
+        "highlights": [
+          {
+            "highlight": "Fericks said that asset managers The Vanguard Group, <em>BlackRock</em> <em>Inc</em>. and State Street Corp. are the largest shareholders in most publicly traded companies. And as a result, they \"call the shots\" and are \"the key architects of ‘stakeholder' capitalism, with their now infamous ‘diversity and inclusion' targets.\"",
+            "sentiment": 0.3612,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "TAP",
+        "name": "Molson Coors Beverage Company",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Consumer Defensive",
+        "match_score": 28.312,
+        "sentiment_score": -0.0772,
+        "highlights": [
+          {
+            "highlight": "Another company that could benefit from the Bud Light fiasco is <em>Molson</em> <em>Coors</em> <em>Beverage</em> Co. (<em>NYSE:TAP</em>), which has a portfolio of iconic beer brands, including Coors Light, Miller Lite, Molson Canadian, Blue Moon and many others.\n\nIf consumers move away from Bud Light, they might opt for Coors Light or Miller Lite instead.",
+            "sentiment": -0.0772,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "STZ",
+        "name": "Constellation Brands, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Consumer Defensive",
+        "match_score": 37.50563,
+        "sentiment_score": 0.4696,
+        "highlights": [
+          {
+            "highlight": "The top spot now belongs to Modelo Especial, brewed by <em>Constellation</em> <em>Brands</em> <em>Inc</em>. (<em>NYSE:STZ</em>).\n\n<em>Constellation</em> <em>Brands</em> is a leading international producer and marketer of beer, wine and spirits. Other than Modelo Especial, the company has many other popular brands, including Corona beer, Robert Mondavi wines and High West whiskey.",
+            "sentiment": 0.5574,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "Anheuser-Busch, <em>Constellation</em> <em>Brands</em> and Molson Coors are all dividend-paying companies. Beer companies have the potential to be solid dividend plays because of the resilience of beer sales across economic cycles. But as demonstrated by recent developments at Anheuser-Busch, beer stocks can still be volatile.",
+            "sentiment": 0.3818,
+            "highlighted_in": "main_text"
+          }
+        ]
+      },
+      {
+        "symbol": "STZ-B",
+        "name": "Constellation Brands, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Consumer Defensive",
+        "match_score": 28.891054,
+        "sentiment_score": 0.4696,
+        "highlights": [
+          {
+            "highlight": "The top spot now belongs to Modelo Especial, brewed by <em>Constellation</em> <em>Brands</em> <em>Inc</em>. (NYSE:STZ).\n\n<em>Constellation</em> <em>Brands</em> is a leading international producer and marketer of beer, wine and spirits. Other than Modelo Especial, the company has many other popular brands, including Corona beer, Robert Mondavi wines and High West whiskey.",
+            "sentiment": 0.5574,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "Anheuser-Busch, <em>Constellation</em> <em>Brands</em> and Molson Coors are all dividend-paying companies. Beer companies have the potential to be solid dividend plays because of the resilience of beer sales across economic cycles. But as demonstrated by recent developments at Anheuser-Busch, beer stocks can still be volatile.",
+            "sentiment": 0.3818,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "af8fbcd7-72ee-499c-bced-ae3c114d629a",
+    "title": "La SEC accetta la richiesta dell'ETF Bitcoin di BlackRock Da CoinTelegraph",
+    "description": "La SEC accetta la richiesta dell'ETF Bitcoin di BlackRock",
+    "keywords": "",
+    "snippet": "Pubblicato 15.07.2023 15:10 Aggiornato 15.07.2023 16:05\n\n© Reuters. La SEC accetta la richiesta dell'ETF Bitcoin di BlackRock\n\nBLK -1,59% Aggiungi/Rimuovi dal ...",
+    "url": "https://it.investing.com/news/cryptocurrency-news/la-sec-accetta-la-richiesta-delletf-bitcoin-di-blackrock-2157011",
+    "image_url": "https://i-invdn-com.investing.com/news/LYNXNPED8B0RG_L.jpg",
+    "language": "it",
+    "published_at": "2023-07-15T14:05:11.000000Z",
+    "source": "it.investing.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "BLK",
+        "name": "BlackRock, Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Financial Services",
+        "match_score": 35.115093,
+        "sentiment_score": null,
+        "highlights": [
+          {
+            "highlight": "La SEC accetta la richiesta dell'ETF Bitcoin di <em>BlackRock</em>\n\nBLK -1,59% Aggiungi/Rimuovi dal Portafoglio BTC/USD -3,08% Aggiungi/Rimuovi dal Portafoglio\n\nLa Securities and Exchange Commission (SEC) degli Stati Uniti ha accettato la domanda di <em>BlackRock</em> (NYSE: ) per un exchange-traded fund (ETF) (BTC) Spot, dopo aver riconosciuto una domanda simile da",
+            "sentiment": 0.7553,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "Il riconoscimento della SEC indica l'inizio del processo di revisione ufficiale per la proposta dell'ETF di <em>BlackRock</em>. Sebbene si tratti di un primo passo nel lungo percorso normativo, riveste una grande importanza per la community Bitcoin.",
+            "sentiment": 0.7553,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "La SEC accetta la richiesta dell'ETF Bitcoin di <em>BlackRock</em> Da CoinTelegraph",
+            "sentiment": 0.7553,
+            "highlighted_in": "title"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "e80085b2-101b-461c-a2ba-2dbec818488d",
+    "title": "44 EV Startups That Are Helping Keep The Earth Healthy And Clean",
+    "description": "Estimated to reach to $15,397 Bn by 2027, the Indian EV market today houses various small as well as large EV startups.",
+    "keywords": "",
+    "snippet": "The Indian EV market, estimated to reach to $15,397 Bn by 2027, houses various small as well as large EV startups EV startups offer services such as sustainable...",
+    "url": "https://inc42.com/startups/24-ev-startups-that-are-helping-keep-the-earth-healthy-clean/",
+    "image_url": "https://cdn.inc42.com/wp-content/uploads/2023/02/EV-Listicle-Social.png",
+    "language": "en",
+    "published_at": "2023-07-15T14:01:01.000000Z",
+    "source": "inc42.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "MGA",
+        "name": "Magna International Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Consumer Cyclical",
+        "match_score": 4.415489,
+        "sentiment_score": 0.3612,
+        "highlights": [
+          {
+            "highlight": "In December last year, it reportedly raised $7 Mn in a debt funding round from <em>Magna</em> <em>International</em> <em>INC</em> through non-convertible notes. It has secured a total funding of $27.4 Mn to date. It claims to have swapped 3 Mn batteries to date and will expand its fleet to 100K units by the end of 2022.",
+            "sentiment": 0.3612,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "c2a83fb5-f94f-42fe-96a7-5cc71e0d14f4",
+    "title": "Energy Transfer Stock: Looks Cheap Going Into Earnings (NYSE:ET)",
+    "description": "Energy Transfer acquired 3 companies, increasing its cash flow, reducing its debt, and restoring its distribution. Learn why ET stock is rated as a strong buy.",
+    "keywords": "",
+    "snippet": "PM Images\n\nMaster Limited Partnerships (MLPs) have been favorites among the income investor community as they often distribute large amounts of their income to ...",
+    "url": "https://seekingalpha.com/article/4617257-energy-transfer-looks-cheap-going-into-earnings",
+    "image_url": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1445810122/image_1445810122.jpg?io=getty-c-w1536",
+    "language": "en",
+    "published_at": "2023-07-15T14:00:23.000000Z",
+    "source": "seekingalpha.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "MPLX",
+        "name": "MPLX LP",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Energy",
+        "match_score": 18.437874,
+        "sentiment_score": 0.5423,
+        "highlights": [
+          {
+            "highlight": "The largest holdings in AMLP are:\n\nPlains All American Pipeline (PAA)\n\nMagellan Midstream Partners (MMP)\n\n<em>MPLX</em> <em>LP</em> (MPLX)\n\nEnterprise Products Partners (EPD)\n\nEnergy Transfer (ET)\n\nFrom the peer group, I am comparing these MLPS on the following metrics:\n\nMarket Cap to DCF ratio\n\nMarket Cap to Adjusted EBITDA ratio\n\nEnterprise Value to Adjusted EBITDA",
+            "sentiment": 0.5423,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  },
+  {
+    "id": "e25f3a1e-98f2-4c76-b423-827c27e85d54",
+    "title": "Cathie Wood Calls Nvidia An 'Incredible AI Play' But Explains Why She Prefers This AI-Levered SaaS Provider Over The Chipmaker",
+    "description": "Cathie Wood offered her thoughts on stocks connected to artificial intelligence technology in a media appearance on Friday.    What Happened: Expl...",
+    "keywords": "",
+    "snippet": "Cathie Wood offered her thoughts on stocks connected to artificial intelligence technology in a media appearance on Friday.\n\nWhat Happened: Explaining Ark's inv...",
+    "url": "https://markets.businessinsider.com/news/etf/cathie-wood-calls-nvidia-an-incredible-ai-play-but-explains-why-she-prefers-this-ai-levered-saas-provider-over-the-chipmaker-1032448681",
+    "image_url": "https://cdn.benzinga.com/files/imagecache/1024x768xUP/images/story/2023/Nvidia_13.jpeg",
+    "language": "en",
+    "published_at": "2023-07-15T13:45:55.000000Z",
+    "source": "markets.businessinsider.com",
+    "relevance_score": null,
+    "entities": [
+      {
+        "symbol": "TWLO",
+        "name": "Twilio Inc.",
+        "exchange": "NYSE",
+        "exchange_long": "New York Stock Exchange",
+        "country": "us",
+        "type": "equity",
+        "industry": "Communication Services",
+        "match_score": 44.281437,
+        "sentiment_score": 0.1145,
+        "highlights": [
+          {
+            "highlight": "See Also: Cathie Wood Says Fed Will Have To Adjust Now As Deflation Looms Large: ‘We’ll Be On The Other Side Of The Horror Show We Just Went Through’\n\n<em>Twilio</em> Over Nvidia: Nvidia was trading at 25 times revenue, while cloud communication software services provider <em>Twilio</em>, <em>Inc</em>.",
+            "sentiment": -0.6486,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "(<em>NYSE:TWLO</em>) — a huge beneficiary of AI — was trading at two times revenue, Wood noted. Therefore, selling Nvidia was a valuation judgment call, she said.\n\n“We had done very well, you know $5 to $350 to $400 and we also kept it in our narrow, more narrowly focused portfolios, but took profits there as well,” Wood said.",
+            "sentiment": 0.847,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "Not many people know that <em>Twilio</em> powers communication around Uber, she added. “<em>Twilio</em> has roughly a trillion consumer business interactions per year now,” she explained.\n\nWood said that companies with “visionary management, a good distribution, global in this case and proprietary data” would be AI winners.",
+            "sentiment": 0.7184,
+            "highlighted_in": "main_text"
+          },
+          {
+            "highlight": "She added that <em>Twilio</em> has data on business-to-consumer communications that no one else has.\n\n“And we think the secret sauce and the real beneficiaries of AI are going to be those with proprietary data,” she said.\n\nNvidia ended Friday’s session down 1.10% at $454.69 and <em>Twilio</em> fell 3.80% to $66.89, according to Benzinga Po data.",
+            "sentiment": -0.4588,
+            "highlighted_in": "main_text"
+          }
+        ]
+      }
+    ],
+    "similar": []
+  }
+]

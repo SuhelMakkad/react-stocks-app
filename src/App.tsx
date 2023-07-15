@@ -4,6 +4,7 @@ import Dashboard from "@/pages/dashboard-page";
 import StockDetailsPage from "@/pages/stock-details-page";
 import SettingsPage from "@/pages/settings-page";
 import PortfolioPage from "@/pages/portfolio-page";
+import NewsPage from "@/pages/news-page";
 
 import { Toaster } from "@/components/ui/toaster";
 
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/stock/:symbol" element={<StockDetailsPage />}></Route>
           <Route path="/settings" element={<SettingsPage />}></Route>
           <Route path="/portfolio" element={<PortfolioPage />}></Route>
+          <Route path="/news" element={<NewsPage />}></Route>
         </Routes>
 
         <Toaster />
