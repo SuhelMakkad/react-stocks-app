@@ -95,7 +95,7 @@ export const columns: ColumnDef<Stock>[] = [
         <TrendChip
           className="grow-0 w-max scale-90"
           trend={row.original.trend}
-          percentageChange={row.getValue("percentageChange")}
+          percentageChange={row.original.percentageChange}
         />
       </div>
     ),

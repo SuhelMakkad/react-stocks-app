@@ -1,5 +1,5 @@
 import TrendChip from "@/components/trend-chip";
-import type { Trend } from "@/components/trend-chip";
+import type { Trend } from "@/assets/data/stocks";
 
 import { formateAmount } from "@/utils/index";
 
