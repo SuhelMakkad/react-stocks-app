@@ -9,6 +9,11 @@ import { data as JPM } from "./JPM";
 import { data as C } from "./C";
 import { data as MS } from "./MS";
 import { data as DJIA } from "./DJIA";
+import { data as NVDA } from "./NVDA";
+import { data as INTC } from "./INTC";
+import { data as AMD } from "./AMD";
+import { data as QCOM } from "./QCOM";
+import { data as MDTKF } from "./MDTKF";
 
 export type ChartData = {
   time: number;
@@ -27,6 +32,11 @@ const stockChartOverview: Record<string, ChartData> = {
   C,
   MS,
   DJIA,
+  NVDA,
+  INTC,
+  AMD,
+  QCOM,
+  MDTKF,
 };
 
 export default stockChartOverview;

@@ -119,6 +119,58 @@ export const stocks: Stock[] = [
     chartData: stockChartOverview.MA,
   },
 
+  // fx rates
+  {
+    symbol: "NVDA",
+    name: "NVIDIA",
+    fullName: "NVIDIA Corp",
+    currentPrice: 471.24,
+    percentageChange: 8.31,
+    trend: "up",
+    category: "special-market",
+    chartData: stockChartOverview.NVDA,
+  },
+  {
+    symbol: "INTC",
+    name: "Intel",
+    fullName: "Intel Corp.",
+    currentPrice: 497.01,
+    percentageChange: 2.22,
+    trend: "down",
+    category: "special-market",
+    chartData: stockChartOverview.INTC,
+  },
+  {
+    symbol: "AMD",
+    name: "Advanced Micro Devices",
+    fullName: "Advanced Micro Devices, Inc.",
+    currentPrice: 597.16,
+    percentageChange: 5.49,
+    trend: "up",
+    category: "special-market",
+    chartData: stockChartOverview.AMD,
+  },
+  {
+    symbol: "QCOM",
+    name: "Qualcomm",
+    fullName: "Qualcomm Inc.",
+    currentPrice: 971.44,
+    percentageChange: 9.26,
+    trend: "up",
+    category: "special-market",
+    chartData: stockChartOverview.QCOM,
+  },
+  {
+    symbol: "MDTKF",
+    name: "MediaTek",
+    fullName: "MediaTek Inc.",
+    currentPrice: 264.11,
+    percentageChange: 3.1,
+    trend: "down",
+    category: "special-market",
+    chartData: stockChartOverview.MDTKF,
+  },
+
   // overview stocks
   {
     symbol: "DJIA",
