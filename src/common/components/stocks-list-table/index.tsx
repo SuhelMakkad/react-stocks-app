@@ -59,7 +59,21 @@ export const columns: ColumnDef<Stock>[] = [
         </button>
       );
     },
-    cell: ({ row }) => <div className="capitalize">{row.getValue("fullName")}</div>,
+    cell: ({ row }) => (
+      <div className="flex flex-col capitalize">
+        <span className="text-lg font-medium">{row.original.name}</span>
+        <span className="text-secondary-foreground">{row.getValue("fullName")}</span>
+      </div>
+    ),
+  },
+  {
+    accessorKey: "chartData",
+    header: () => {
+      return <span className="flex">Trend</span>;
+    },
+    cell: ({ row }) => (
+      <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
+    ),
   },
   {
     accessorKey: "currentPrice",
@@ -76,34 +90,14 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <div className="lowercase">{formateAmount(row.getValue("currentPrice"))}</div>
-    ),
-  },
-  {
-    accessorKey: "chartData",
-    header: () => {
-      return <span className="flex">Trend</span>;
-    },
-    cell: ({ row }) => (
-      <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
-    ),
-  },
-  {
-    accessorKey: "percentageChange",
-    header: ({ column }) => {
-      const sortOrder = column.getIsSorted();
-      return (
-        <button
-          className="flex gap-2 items-center"
-          onClick={() => column.toggleSorting(sortOrder === "asc")}
-        >
-          Change
-          <SortArrow order={sortOrder} />
-        </button>
-      );
-    },
-    cell: ({ row }) => (
-      <TrendChip trend={row.original.trend} percentageChange={row.getValue("percentageChange")} />
+      <div className="flex flex-col md:flex-row gap-1 items-end md:items-center lowercase">
+        <span className="text-lg font-medium">{formateAmount(row.getValue("currentPrice"))}</span>
+        <TrendChip
+          className="grow-0 w-max scale-90"
+          trend={row.original.trend}
+          percentageChange={row.getValue("percentageChange")}
+        />
+      </div>
     ),
   },
 ];

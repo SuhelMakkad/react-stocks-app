@@ -38,7 +38,7 @@ export const stocks: Stock[] = [
   {
     symbol: "MSFT",
     name: "microsoft",
-    fullName: "Microsoft corporation",
+    fullName: "Microsoft corp.",
     currentPrice: 2862.06,
     percentageChange: 13.49,
     trend: "up",
@@ -57,7 +57,7 @@ export const stocks: Stock[] = [
   },
   {
     symbol: "GOOG",
-    name: "alphabet inc.",
+    name: "alphabet",
     fullName: "alphabet inc.",
     currentPrice: 1514.22,
     percentageChange: 1.01,
