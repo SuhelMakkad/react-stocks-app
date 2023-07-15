@@ -5,6 +5,7 @@ import { ChevronLeftCircleIcon } from "lucide-react";
 import ThemeToggle from "@/components/theme-toggle";
 import TrendChip from "@/components/trend-chip";
 import DetailedChart from "@/components/chart/detailed";
+import { Button } from "@/components/ui/button";
 
 import { formateAmount } from "@/utils/index";
 import { stocks } from "@/assets/data/stocks";
@@ -16,6 +17,29 @@ const getStockDetails = (symbol: string) => {
 
   return stock;
 };
+
+const data = [
+  {
+    id: "close-price",
+    label: "close price",
+    value: 25_332,
+  },
+  {
+    id: "last-trade-price",
+    label: "last trade price",
+    value: 25_373,
+  },
+  {
+    id: "outstanding",
+    label: "outstanding",
+    value: 856_924_860,
+  },
+  {
+    id: "market-value",
+    label: "market value",
+    value: 489_856_924_860,
+  },
+];
 
 const StockDetailsPage = () => {
   const params = useParams();
@@ -54,6 +78,46 @@ const StockDetailsPage = () => {
       </section>
 
       <DetailedChart chartData={stock.chartData} trend={stock.trend} />
+
+      <section className="mt-8">
+        <h3 className="capitalize text-muted-foreground font-semibold text-sm md:text-base mb-2">
+          overview
+        </h3>
+
+        <ul className="grid grid-cols-1 md:grid-cols-4 gap-3">
+          {data.map((item) => (
+            <li
+              key={item.id}
+              className="flex md:flex-col items-center md:items-start justify-between capitalize"
+            >
+              <span className="text-sm">{item.label}</span>
+              <span className="text-lg font-semibold">{formateAmount(item.value)}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <Button className="w-full mt-8">Add to Portfolio</Button>
+
+      <section className="mt-8">
+        <h3 className="capitalize text-muted-foreground font-semibold text-sm md:text-base block mb-2">
+          analyst estimates
+        </h3>
+      </section>
+
+      <section className="mt-8">
+        <h3 className="capitalize text-muted-foreground font-semibold text-sm md:text-base block mb-2">
+          about {stock.name}
+        </h3>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias id, rem et consectetur
+          dignissimos non expedita quo in repellat fugiat, excepturi doloribus asperiores deserunt
+          est qui sit fuga nobis perspiciatis, exercitationem quaerat! Ea sequi accusamus veniam
+          nostrum ex odit tenetur. Nisi ea quidem asperiores natus provident eaque consectetur modi
+          quas!
+        </p>
+      </section>
     </div>
   );
 };
