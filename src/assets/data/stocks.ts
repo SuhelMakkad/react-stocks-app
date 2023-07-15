@@ -1,3 +1,6 @@
+import stockChartOverview from "./chart-overview";
+import type { ChartData } from "./chart-overview";
+
 export type Trend = "up" | "down";
 
 export type Stock = {
@@ -8,6 +11,7 @@ export type Stock = {
   percentageChange: number;
   trend: Trend;
   category: string;
+  chartData: ChartData;
 };
 
 export const stocks: Stock[] = [
@@ -19,6 +23,7 @@ export const stocks: Stock[] = [
     percentageChange: 0.38,
     trend: "down",
     category: "junior market",
+    chartData: stockChartOverview.AMZN,
   },
   {
     symbol: "META",
@@ -28,6 +33,7 @@ export const stocks: Stock[] = [
     percentageChange: 4.22,
     trend: "up",
     category: "junior market",
+    chartData: stockChartOverview.META,
   },
   {
     symbol: "MSFT",
@@ -37,6 +43,7 @@ export const stocks: Stock[] = [
     percentageChange: 13.49,
     trend: "up",
     category: "junior market",
+    chartData: stockChartOverview.MSFT,
   },
   {
     symbol: "TSLA",
@@ -46,6 +53,7 @@ export const stocks: Stock[] = [
     percentageChange: 1.01,
     trend: "down",
     category: "junior market",
+    chartData: stockChartOverview.TSLA,
   },
   {
     symbol: "GOOG",
@@ -55,5 +63,6 @@ export const stocks: Stock[] = [
     percentageChange: 1.01,
     trend: "down",
     category: "junior market",
+    chartData: stockChartOverview.GOOG,
   },
 ];

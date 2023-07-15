@@ -28,6 +28,7 @@ import TrendChip from "@/components/trend-chip";
 import type { Stock } from "@/assets/data/stocks";
 
 import { formateAmount } from "@/utils/index";
+import OverviewChart from "../chart/overview";
 
 export type StocksListTableProps = {
   stocks: Stock[];
@@ -67,6 +68,15 @@ export const columns: ColumnDef<Stock>[] = [
     ),
   },
   {
+    accessorKey: "chartData",
+    header: () => {
+      return <span>Trend</span>;
+    },
+    cell: ({ row }) => (
+      <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
+    ),
+  },
+  {
     accessorKey: "percentageChange",
     header: ({ column }) => {
       return (
@@ -74,7 +84,7 @@ export const columns: ColumnDef<Stock>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Trend
+          Change
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );
