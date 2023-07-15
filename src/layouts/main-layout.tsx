@@ -7,7 +7,7 @@ export type MainLayoutProps = {
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div className="flex flex-col-reverse gap-4 md:gap-0 lg:flex-row min-h-screen">
-      <aside className="w-full lg:w-72 min-h-[4rem] shrink-0">
+      <aside className="z-10 border-t md:border-none sticky bottom-0 left-0 right-0 md:static w-full lg:w-72 min-h-[4rem] shrink-0">
         <Navbar />
       </aside>
 
