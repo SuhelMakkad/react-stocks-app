@@ -1,5 +1,5 @@
-import stockChartOverview from "./chart-overview";
-import type { ChartData } from "./chart-overview";
+import stockChartOverview from "./chart";
+import type { ChartData } from "./chart";
 
 export type Trend = "up" | "down";
 

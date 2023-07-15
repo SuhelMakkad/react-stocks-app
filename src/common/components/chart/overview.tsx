@@ -1,5 +1,6 @@
-import type { ChartData } from "@/assets/data/chart-overview";
+import type { ChartData } from "@/assets/data/chart";
 import type { Trend } from "@/assets/data/stocks";
+
 import { cn } from "@/utils/tw";
 
 import { LineChart, Line } from "recharts";

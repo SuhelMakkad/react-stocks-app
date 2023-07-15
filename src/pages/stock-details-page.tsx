@@ -4,13 +4,17 @@ import { ChevronLeftCircleIcon } from "lucide-react";
 
 import ThemeToggle from "@/components/theme-toggle";
 import TrendChip from "@/components/trend-chip";
+import DetailedChart from "@/components/chart/detailed";
 
 import { formateAmount } from "@/utils/index";
-
 import { stocks } from "@/assets/data/stocks";
 
 const getStockDetails = (symbol: string) => {
-  return stocks.find((stock) => stock.symbol?.toLowerCase() === symbol?.toLowerCase());
+  const stock = stocks.find((stock) => stock.symbol?.toLowerCase() === symbol?.toLowerCase());
+
+  if (!stock) return;
+
+  return stock;
 };
 
 const StockDetailsPage = () => {
@@ -48,6 +52,8 @@ const StockDetailsPage = () => {
           trend={stock.trend}
         />
       </section>
+
+      <DetailedChart chartData={stock.chartData} trend={stock.trend} />
     </div>
   );
 };

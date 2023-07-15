@@ -9,6 +9,6 @@ export type ChartData = {
   val: number;
 }[];
 
-const stockChartOverview = { AMZN, GOOG, META, TSLA, MSFT };
+const stockChartOverview: Record<string, ChartData> = { AMZN, GOOG, META, TSLA, MSFT };
 
 export default stockChartOverview;
