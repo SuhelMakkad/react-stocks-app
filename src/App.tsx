@@ -10,7 +10,7 @@ export default function App() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Dashboard />}></Route>
-          <Route path="/stock/:stockId" element={<StockDetailsPage />}></Route>
+          <Route path="/stock/:symbol" element={<StockDetailsPage />}></Route>
         </Routes>
       </MainLayout>
     </BrowserRouter>
