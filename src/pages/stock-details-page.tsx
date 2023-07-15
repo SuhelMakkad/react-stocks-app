@@ -161,8 +161,8 @@ const AddStockBtn = ({ stockName }: AddStockBtnProps) => {
   };
 
   return (
-    <div className="flex justify-center">
-      <Button className="mt-8" onClick={handleStockAdd} disabled={isLoading}>
+    <div className="flex justify-center mt-8">
+      <Button className="w-full md:w-auto mx-auto" onClick={handleStockAdd} disabled={isLoading}>
         {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
         Add to Portfolio
       </Button>

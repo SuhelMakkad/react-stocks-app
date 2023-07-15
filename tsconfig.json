@@ -24,7 +24,7 @@
       "@/images/*": ["src/assets/images/*"],
       "@/assets/*": ["src/assets/*"],
       "@/utils/*": ["src/common/utils/*"],
-      "@/store/*": ["src/common/store/*"],
+      "@/store/*": ["src/store/*"],
       "@/*": ["src/*"]
     },
 

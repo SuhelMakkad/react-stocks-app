@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useFieldArray, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import * as z from "zod";
 
 import { cn } from "@/utils/tw";
@@ -10,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -19,6 +19,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
+import { useUserStore } from "@/store/user-store";
+import { Loader2 } from "lucide-react";
 
 // validation schema for the form
 const profileFormSchema = z.object({
@@ -40,19 +42,35 @@ const profileFormSchema = z.object({
 
 type ProfileFormValues = z.infer<typeof profileFormSchema>;
 
-const defaultValues: Partial<ProfileFormValues> = {};
-
+/**
+ * Zod is used to validate the form response
+ * User details are not stored in any database for now
+ * User details are stored in the localstorage
+ */
 export function ProfileForm() {
+  const [isLoading, setIsLoading] = useState(false);
+  const userDetails = useUserStore();
+
   const form = useForm<ProfileFormValues>({
     resolver: zodResolver(profileFormSchema),
-    defaultValues,
+    defaultValues: {
+      username: userDetails.username,
+      email: userDetails.email,
+      bio: userDetails.bio,
+    },
     mode: "onChange",
   });
 
-  const onSubmit = (_data: ProfileFormValues) => {
-    toast({
-      title: "Your profile has been updated",
-    });
+  const onSubmit = (data: ProfileFormValues) => {
+    setIsLoading(true);
+    setTimeout(() => {
+      userDetails.setDetails(data);
+      toast({
+        title: "Your profile has been updated",
+      });
+
+      setIsLoading(false);
+    }, 500);
   };
 
   return (
@@ -65,7 +83,7 @@ export function ProfileForm() {
             <FormItem>
               <FormLabel>Username</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} />
+                <Input placeholder="Rick Sanchez" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -105,7 +123,8 @@ export function ProfileForm() {
         />
 
         <div className="flex mt-4">
-          <Button className="w-full md:w-auto mx-auto" type="submit">
+          <Button className="w-full md:w-auto mx-auto" disabled={isLoading}>
+            {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
             Update profile
           </Button>
         </div>
