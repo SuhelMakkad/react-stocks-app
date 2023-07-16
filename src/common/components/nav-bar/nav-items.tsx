@@ -1,4 +1,5 @@
-import * as Lucide from "lucide-react";
+import { Settings, CandlestickChart, Newspaper, PieChart } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export type NavItemsGroups = {
   id: string;
@@ -6,7 +7,7 @@ export type NavItemsGroups = {
   items: {
     label: string;
     href: string;
-    icon: keyof typeof Lucide;
+    icon: LucideIcon;
   }[];
 }[];
 
@@ -17,7 +18,7 @@ export const navItemsGroups: NavItemsGroups = [
       {
         label: "Settings",
         href: "/settings",
-        icon: "Settings",
+        icon: Settings,
       },
     ],
   },
@@ -28,17 +29,17 @@ export const navItemsGroups: NavItemsGroups = [
       {
         label: "Market",
         href: "/",
-        icon: "CandlestickChart",
+        icon: CandlestickChart,
       },
       {
         label: "News",
         href: "/news",
-        icon: "Newspaper",
+        icon: Newspaper,
       },
       {
         label: "Portfolio",
         href: "/portfolio",
-        icon: "PieChart",
+        icon: PieChart,
       },
     ],
   },
