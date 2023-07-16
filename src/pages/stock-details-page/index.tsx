@@ -106,6 +106,8 @@ const StockDetailsPage = () => {
             </li>
           ))}
         </ul>
+
+        <AddStockBtn stock={stock} />
       </section>
 
       <section className="mt-12">
@@ -122,8 +124,8 @@ const StockDetailsPage = () => {
               percentage={stock.trend === "up" ? 62 : 21}
               type={stock.trend === "up" ? "green" : "red"}
             />
-            <ProgressWithLabel label="hold" percentage={4} />
-            <ProgressWithLabel label="sell" percentage={15} />
+            <ProgressWithLabel label="hold" percentage={stock.trend === "up" ? 15 : 4} />
+            <ProgressWithLabel label="sell" percentage={stock.trend === "up" ? 4 : 75} />
           </div>
         </div>
       </section>
@@ -141,8 +143,6 @@ const StockDetailsPage = () => {
           quas!
         </p>
       </section>
-
-      <AddStockBtn stock={stock} />
     </div>
   );
 };
