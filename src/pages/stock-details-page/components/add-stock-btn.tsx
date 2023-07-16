@@ -40,7 +40,7 @@ const AddStockBtn = ({ stock }: AddStockBtnProps) => {
   };
 
   return (
-    <div className="flex justify-center mt-8">
+    <div className="flex justify-center mt-8 lg:mt-12">
       <Button className="w-full md:w-auto mx-auto" onClick={handleStockAdd} disabled={isLoading}>
         {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
         {isAddedToPortfolio(stock.symbol) ? "Remove from Portfolio" : "Add to Portfolio"}
