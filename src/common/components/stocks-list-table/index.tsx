@@ -24,12 +24,14 @@ import {
 import { columns } from "./columns";
 
 import type { Stock } from "@/assets/data/stocks";
+import { cn } from "@/utils/tw";
 
 export type StocksListTableProps = {
   stocks: Stock[];
+  searchWrapperClassName?: string;
 };
 
-const StocksListTable = ({ stocks }: StocksListTableProps) => {
+const StocksListTable = ({ stocks, searchWrapperClassName }: StocksListTableProps) => {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({});
@@ -57,7 +59,12 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
 
   return (
     <div className="w-full select-none">
-      <div className="flex items-center gap-2 mx-3 px-2 py-3 bg-transparent rounded-lg border mb-6 max-w-lg">
+      <div
+        className={cn(
+          "flex items-center gap-2 px-2 py-3 bg-transparent rounded-lg border mb-6 max-w-lg",
+          searchWrapperClassName
+        )}
+      >
         <Search className="w-4 h-4" />
         <input
           placeholder="Search stocks..."

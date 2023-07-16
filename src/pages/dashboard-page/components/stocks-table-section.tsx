@@ -41,7 +41,10 @@ const StocksTableSection = () => {
         >
           {categories.map((category) => (
             <SwiperSlide key={category.id}>
-              <StocksListTable stocks={groupedStocks[category.id]} />
+              <StocksListTable
+                searchWrapperClassName="mx-3 md:mx-0"
+                stocks={groupedStocks[category.id]}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
