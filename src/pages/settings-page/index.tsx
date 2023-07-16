@@ -1,7 +1,11 @@
+import useDocumentTitle from "@/hooks/useDocumentTitle";
+
 import { ProfileForm } from "@/components/profile-form";
 import ThemeToggle from "@/components/theme-toggle";
 
 const SettingsPage = () => {
+  useDocumentTitle("Settings");
+
   return (
     <div className="container mx-auto pt-4 space-y-6">
       <div className="flex gap-2 justify-between">

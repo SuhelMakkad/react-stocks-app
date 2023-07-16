@@ -1,8 +1,12 @@
+import useDocumentTitle from "@/hooks/useDocumentTitle";
+
 import ThemeToggle from "@/components/theme-toggle";
 import { stockNewsList } from "@/assets/data/stock-news";
 import { Separator } from "@/components/ui/separator";
 
 const PortfolioPage = () => {
+  useDocumentTitle("News");
+
   return (
     <div className="container mx-auto pt-4">
       <div className="flex gap-2 justify-between">

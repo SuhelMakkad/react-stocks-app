@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-
 import { ChevronLeft } from "lucide-react";
+
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 import ThemeToggle from "@/components/theme-toggle";
 import TrendChip from "@/components/trend-chip";
@@ -50,12 +51,15 @@ const StockDetailsPage = () => {
 
   if (!stock) {
     // TODO: add a 404 page
+    useDocumentTitle("404");
+
     return (
       <div className="container mx-auto pt-4">
         <span>404</span>
       </div>
     );
   }
+  useDocumentTitle(stock.fullName);
 
   return (
     <div className="container mx-auto pt-4">

@@ -1,4 +1,5 @@
 import { usePortfolioStore } from "@/store/portfolio-store";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 import ThemeToggle from "@/components/theme-toggle";
 import StocksListTable from "@/components/stocks-list-table";
@@ -14,6 +15,8 @@ const getStocksFromSymbols = (symbols: string[]) => {
 const PortfolioPage = () => {
   const stockSymbols = usePortfolioStore((state) => state.symbols);
   const stocks = getStocksFromSymbols(stockSymbols);
+
+  useDocumentTitle("Portfolio");
 
   return (
     <div className="container mx-auto pt-4">

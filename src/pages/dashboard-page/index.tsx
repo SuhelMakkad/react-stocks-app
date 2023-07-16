@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import useDocumentTitle from "@/hooks/useDocumentTitle";
+
 import OverviewCard from "@/components/overview-card";
 import ThemeToggle from "@/components/theme-toggle";
 import StocksTableSection from "./components/stocks-table-section";
@@ -10,6 +12,8 @@ const groupedStocks = getGroupedStocks();
 const overviewStocks = groupedStocks.overview;
 
 const Dashboard = () => {
+  useDocumentTitle("Market");
+
   return (
     <div className="container mx-auto pt-4">
       <div className="flex justify-between items-center gap-2 mb-8">
