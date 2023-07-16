@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 
-import * as I from "lucide-react";
 import type { NavItemsGroups } from "./nav-items";
 
 export type NavListProps = {
