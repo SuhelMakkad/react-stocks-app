@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 
-import { ChevronLeftCircleIcon } from "lucide-react";
+import { ChevronLeft, ChevronLeftCircleIcon } from "lucide-react";
 
 import ThemeToggle from "@/components/theme-toggle";
 import TrendChip from "@/components/trend-chip";
@@ -61,8 +61,8 @@ const StockDetailsPage = () => {
     <div className="container mx-auto pt-4">
       <section className="flex justify-between items-center gap-2 mb-8">
         <div className="flex gap-2 items-center">
-          <Link to={"/"} className="block lg:hidden">
-            <ChevronLeftCircleIcon className="opacity-50 w-9 h-9" />
+          <Link to={"/"} className="block lg:hidden rounded-full border-2 border-primary/50">
+            <ChevronLeft className="opacity-50 w-7 h-7" />
           </Link>
           <header className="leading-none">
             <h1 className="text-lg font-semibold tracking-tight">{stock.symbol}</h1>
