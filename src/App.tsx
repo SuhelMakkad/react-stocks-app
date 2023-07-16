@@ -26,7 +26,7 @@ export default function App() {
                 <DashboardPage />
               </React.Suspense>
             }
-          ></Route>
+          />
           <Route
             path="/stock/:symbol"
             element={
@@ -34,7 +34,7 @@ export default function App() {
                 <StockDetailsPage />
               </React.Suspense>
             }
-          ></Route>
+          />
           <Route
             path="/settings"
             element={
@@ -42,7 +42,7 @@ export default function App() {
                 <SettingsPage />
               </React.Suspense>
             }
-          ></Route>
+          />
           <Route
             path="/portfolio"
             element={
@@ -50,7 +50,7 @@ export default function App() {
                 <PortfolioPage />
               </React.Suspense>
             }
-          ></Route>
+          />
           <Route
             path="/news"
             element={
@@ -58,7 +58,7 @@ export default function App() {
                 <NewsPage />
               </React.Suspense>
             }
-          ></Route>
+          />
         </Routes>
 
         <Toaster />
