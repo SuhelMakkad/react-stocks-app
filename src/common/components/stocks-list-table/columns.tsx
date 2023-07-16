@@ -46,7 +46,9 @@ export const columns: ColumnDef<Stock>[] = [
       return <span className="flex">Trend</span>;
     },
     cell: ({ row }) => (
-      <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
+      <div className="w-16 sm:w-32">
+        <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
+      </div>
     ),
   },
   {
