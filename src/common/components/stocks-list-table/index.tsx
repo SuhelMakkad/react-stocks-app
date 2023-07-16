@@ -95,7 +95,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
                   className="cursor-pointer tap-highlight-transparent"
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
+                    <TableCell key={cell.id} className="px-2 py-4 md:p-4">
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
                     </TableCell>
                   ))}
