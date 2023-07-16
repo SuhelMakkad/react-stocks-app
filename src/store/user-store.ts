@@ -18,7 +18,7 @@ export const useUserStore = create(
       username: "Rick Sanchez",
       email: "",
       bio: "",
-      profileImage: "https://github.com/shadcn.png",
+      profileImage: "/profile-pic.jpeg",
       setDetails: (newUserDetails) => set(newUserDetails),
     }),
     {
