@@ -1,9 +1,10 @@
 import React from "react";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainLayout from "@/layouts/main-layout";
 
+import MainLayout from "@/layouts/main-layout";
 import { Toaster } from "@/components/ui/toaster";
+import LoadingIndicator from "@/components/loading-indicator";
+
 import { BASE_PATH } from "@/utils/index";
 
 // lazy loading the pages to improve performance
@@ -21,7 +22,7 @@ export default function App() {
           <Route
             path="/"
             element={
-              <React.Suspense fallback={"Loading..."}>
+              <React.Suspense fallback={<LoadingIndicator />}>
                 <DashboardPage />
               </React.Suspense>
             }
@@ -29,7 +30,7 @@ export default function App() {
           <Route
             path="/stock/:symbol"
             element={
-              <React.Suspense fallback={"Loading..."}>
+              <React.Suspense fallback={<LoadingIndicator />}>
                 <StockDetailsPage />
               </React.Suspense>
             }
@@ -37,7 +38,7 @@ export default function App() {
           <Route
             path="/settings"
             element={
-              <React.Suspense fallback={"Loading..."}>
+              <React.Suspense fallback={<LoadingIndicator />}>
                 <SettingsPage />
               </React.Suspense>
             }
@@ -45,7 +46,7 @@ export default function App() {
           <Route
             path="/portfolio"
             element={
-              <React.Suspense fallback={"Loading..."}>
+              <React.Suspense fallback={<LoadingIndicator />}>
                 <PortfolioPage />
               </React.Suspense>
             }
