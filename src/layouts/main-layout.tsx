@@ -1,3 +1,4 @@
+import ScrollToTop from "@/components/scroll-to-top";
 import Navbar from "@/components/nav-bar";
 
 export type MainLayoutProps = {
@@ -14,6 +15,8 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <main className="border-none lg:border grow min-h-[10rem] rounded-l-lg overflow-y-hidden mb-8">
         {children}
       </main>
+
+      <ScrollToTop />
     </div>
   );
 };
