@@ -2,7 +2,7 @@ import { Loader2 } from "lucide-react";
 import { cn } from "@/utils/tw";
 
 export type LoadingIndicatorProps = {
-  className: string;
+  className?: string;
 };
 
 const LoadingIndicator = ({ className }: LoadingIndicatorProps) => {
