@@ -6,12 +6,12 @@ export type MainLayoutProps = {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <div className="flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row min-h-screen">
+    <div className="flex flex-col-reverse lg:flex-row min-h-screen">
       <aside className="z-10 border-t lg:border-none sticky bottom-0 left-0 right-0 md:top-0 w-full lg:w-72 min-h-[4rem] shrink-0 max-h-screen">
         <Navbar />
       </aside>
 
-      <main className="border-none lg:border grow min-h-[10rem] rounded-l-lg overflow-y-hidden">
+      <main className="border-none lg:border grow min-h-[10rem] rounded-l-lg overflow-y-hidden mb-8">
         {children}
       </main>
     </div>
