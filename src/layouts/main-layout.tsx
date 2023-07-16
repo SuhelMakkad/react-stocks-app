@@ -11,7 +11,9 @@ const MainLayout = ({ children }: MainLayoutProps) => {
         <Navbar />
       </aside>
 
-      <main className="border grow min-h-[10rem] rounded-l-lg overflow-y-hidden">{children}</main>
+      <main className="border-none lg:border grow min-h-[10rem] rounded-l-lg overflow-y-hidden">
+        {children}
+      </main>
     </div>
   );
 };
