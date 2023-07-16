@@ -23,8 +23,8 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config --global user.name "Gabriel Santos Cardoso"
-          git config --global user.email eng.gabrielscardoso@gmail.com
+          git config --global user.name "Suhel Makkad"
+          git config --global user.email makadsuhel11@gmail.com
 
       - name: Install dependencies
         run: pnpm install
@@ -34,7 +34,7 @@ jobs:
 
       - name: Build application
         run: pnpm build
-      
+
       - name: Run Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
