@@ -1,24 +1,63 @@
+import React from "react";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "@/layouts/main-layout";
-import Dashboard from "@/pages/dashboard-page";
-import StockDetailsPage from "@/pages/stock-details-page";
-import SettingsPage from "@/pages/settings-page";
-import PortfolioPage from "@/pages/portfolio-page";
-import NewsPage from "@/pages/news-page";
 
 import { Toaster } from "@/components/ui/toaster";
 import { BASE_PATH } from "@/utils/index";
+
+// lazy loading the pages to improve performance
+const DashboardPage = React.lazy(() => import("@/pages/dashboard-page"));
+const StockDetailsPage = React.lazy(() => import("@/pages/stock-details-page"));
+const SettingsPage = React.lazy(() => import("@/pages/settings-page"));
+const PortfolioPage = React.lazy(() => import("@/pages/portfolio-page"));
+const NewsPage = React.lazy(() => import("@/pages/news-page"));
 
 export default function App() {
   return (
     <BrowserRouter basename={BASE_PATH}>
       <MainLayout>
         <Routes>
-          <Route path="/" element={<Dashboard />}></Route>
-          <Route path="/stock/:symbol" element={<StockDetailsPage />}></Route>
-          <Route path="/settings" element={<SettingsPage />}></Route>
-          <Route path="/portfolio" element={<PortfolioPage />}></Route>
-          <Route path="/news" element={<NewsPage />}></Route>
+          <Route
+            path="/"
+            element={
+              <React.Suspense fallback={"Loading..."}>
+                <DashboardPage />
+              </React.Suspense>
+            }
+          ></Route>
+          <Route
+            path="/stock/:symbol"
+            element={
+              <React.Suspense fallback={"Loading..."}>
+                <StockDetailsPage />
+              </React.Suspense>
+            }
+          ></Route>
+          <Route
+            path="/settings"
+            element={
+              <React.Suspense fallback={"Loading..."}>
+                <SettingsPage />
+              </React.Suspense>
+            }
+          ></Route>
+          <Route
+            path="/portfolio"
+            element={
+              <React.Suspense fallback={"Loading..."}>
+                <PortfolioPage />
+              </React.Suspense>
+            }
+          ></Route>
+          <Route
+            path="/news"
+            element={
+              <React.Suspense fallback={"Loading..."}>
+                <NewsPage />
+              </React.Suspense>
+            }
+          ></Route>
         </Routes>
 
         <Toaster />
