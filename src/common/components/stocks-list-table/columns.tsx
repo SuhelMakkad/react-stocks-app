@@ -34,7 +34,7 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <div className="flex flex-col capitalize">
+      <div className="flex flex-col capitalize max-w-[8rem] md:max-w-none">
         <span className="text-lg font-medium uppercase">{row.original.symbol}</span>
         <span className="text-secondary-foreground">{row.getValue("fullName")}</span>
       </div>
@@ -46,7 +46,7 @@ export const columns: ColumnDef<Stock>[] = [
       return <span className="flex">Trend</span>;
     },
     cell: ({ row }) => (
-      <div className="xs:w-16 sm:w-32">
+      <div className="w-14 xs:w-16 sm:w-32">
         <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
       </div>
     ),
