@@ -16,7 +16,7 @@ const StocksTableSection = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <section className="mt-12 mb-8 md:mt-16 space-y-3">
+    <section className="mt-12 mb-8 md:mt-16 space-y-4">
       <h3 className="text-sm font-semibold text-muted-foreground">Stocks Details</h3>
 
       <ul className="flex overflow-auto shrink-0 whitespace-nowrap hide-scroll">

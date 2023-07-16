@@ -67,8 +67,8 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
         />
       </div>
 
-      <div className="md:rounded-md border -mx-3 md:mx-auto">
-        <Table>
+      <div className="md:rounded-md border md:mx-auto">
+        <Table className="touch-none">
           <TableHeader className="max-md:hidden">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
