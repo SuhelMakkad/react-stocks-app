@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 
-import { ChevronLeft, ChevronLeftCircleIcon } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 import ThemeToggle from "@/components/theme-toggle";
 import TrendChip from "@/components/trend-chip";
