@@ -5,8 +5,6 @@ import MainLayout from "@/layouts/main-layout";
 import { Toaster } from "@/components/ui/toaster";
 import LoadingIndicator from "@/components/loading-indicator";
 
-import { BASE_PATH } from "@/utils/index";
-
 // lazy loading the pages to improve performance
 const DashboardPage = React.lazy(() => import("@/pages/dashboard-page"));
 const StockDetailsPage = React.lazy(() => import("@/pages/stock-details-page"));
@@ -16,7 +14,7 @@ const NewsPage = React.lazy(() => import("@/pages/news-page"));
 
 export default function App() {
   return (
-    <BrowserRouter basename={BASE_PATH}>
+    <BrowserRouter>
       <MainLayout>
         <Routes>
           <Route
