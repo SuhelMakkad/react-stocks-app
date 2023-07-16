@@ -54,7 +54,7 @@ export default function App() {
           <Route
             path="/news"
             element={
-              <React.Suspense fallback={"Loading..."}>
+              <React.Suspense fallback={<LoadingIndicator />}>
                 <NewsPage />
               </React.Suspense>
             }
