@@ -97,7 +97,8 @@
   textarea,
   button,
   select,
-  a {
+  a,
+  .tap-highlight-transparent {
     /* removing bg highlight when clicked */
     -webkit-tap-highlight-color: transparent;
   }

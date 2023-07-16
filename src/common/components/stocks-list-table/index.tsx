@@ -92,7 +92,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
                   onClick={() => navigate(`/stock/${row.original.symbol}`)}
-                  className="cursor-pointer"
+                  className="cursor-pointer tap-highlight-transparent"
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>
