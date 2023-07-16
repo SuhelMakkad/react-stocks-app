@@ -57,7 +57,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
 
   return (
     <div className="w-full select-none">
-      <div className="flex items-center gap-2 px-2 py-3 bg-transparent rounded-lg border mb-6 max-w-lg">
+      <div className="flex items-center gap-2 mx-3 px-2 py-3 bg-transparent rounded-lg border mb-6 max-w-lg">
         <Search className="w-4 h-4" />
         <input
           placeholder="Search stocks..."
@@ -67,7 +67,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
         />
       </div>
 
-      <div className="md:rounded-md border md:mx-auto">
+      <div className="md:rounded-md md:mx-auto px-3 border-t border-b md:border-l md:border-r">
         <Table className="touch-none">
           <TableHeader className="max-md:hidden">
             {table.getHeaderGroups().map((headerGroup) => (

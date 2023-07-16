@@ -33,17 +33,19 @@ const StocksTableSection = () => {
         ))}
       </ul>
 
-      <Swiper
-        onSwiper={setSwiperInstance}
-        spaceBetween={50}
-        onSlideChange={(e) => setActiveSlide(e.activeIndex)}
-      >
-        {categories.map((category) => (
-          <SwiperSlide key={category.id}>
-            <StocksListTable stocks={groupedStocks[category.id]} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="-mx-3 md:mx-0">
+        <Swiper
+          onSwiper={setSwiperInstance}
+          spaceBetween={0}
+          onSlideChange={(e) => setActiveSlide(e.activeIndex)}
+        >
+          {categories.map((category) => (
+            <SwiperSlide key={category.id}>
+              <StocksListTable stocks={groupedStocks[category.id]} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };
