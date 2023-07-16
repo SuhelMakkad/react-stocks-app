@@ -19,7 +19,7 @@ const StocksTableSection = () => {
     <section className="mt-12 mb-8 md:mt-16 space-y-3">
       <h3 className="text-sm font-semibold text-muted-foreground">Stocks Details</h3>
 
-      <ul className="flex">
+      <ul className="flex overflow-auto shrink-0 whitespace-nowrap hide-scroll">
         {categories.map((category, index) => (
           <li key={category.id}>
             <button
