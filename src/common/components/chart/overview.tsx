@@ -12,7 +12,7 @@ export type OverviewChartProps = {
 
 const OverviewChart = ({ chartData, trend }: OverviewChartProps) => {
   return (
-    <LineChart width={80} height={30} data={chartData}>
+    <LineChart width={80} height={30} data={chartData} className="pointer-events-none select-none">
       <Line
         type="monotone"
         dataKey="val"

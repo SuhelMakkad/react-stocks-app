@@ -26,7 +26,7 @@ import type { Stock } from "@/assets/data/stocks";
 
 import { formateAmount } from "@/utils/index";
 import OverviewChart from "../chart/overview";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export type StocksListTableProps = {
   stocks: Stock[];
@@ -59,10 +59,10 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <Link to={`/stock/${row.original.symbol}`} className="flex flex-col capitalize">
+      <div className="flex flex-col capitalize">
         <span className="text-lg font-medium uppercase">{row.original.symbol}</span>
         <span className="text-secondary-foreground">{row.getValue("fullName")}</span>
-      </Link>
+      </div>
     ),
   },
   {
@@ -71,9 +71,7 @@ export const columns: ColumnDef<Stock>[] = [
       return <span className="flex">Trend</span>;
     },
     cell: ({ row }) => (
-      <Link to={`/stock/${row.original.symbol}`} className="cursor-pointer">
-        <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
-      </Link>
+      <OverviewChart chartData={row.getValue("chartData")} trend={row.original.trend} />
     ),
   },
   {
@@ -91,17 +89,14 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <Link
-        to={`/stock/${row.original.symbol}`}
-        className="flex flex-col md:flex-row gap-1 items-end md:items-center lowercase"
-      >
+      <div className="flex flex-col md:flex-row gap-1 items-end md:items-center lowercase">
         <span className="text-lg font-medium">{formateAmount(row.getValue("currentPrice"))}</span>
         <TrendChip
           className="grow-0 w-max scale-90"
           trend={row.original.trend}
           percentageChange={row.original.percentageChange}
         />
-      </Link>
+      </div>
     ),
   },
 ];
@@ -111,6 +106,8 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = React.useState({});
+
+  const navigate = useNavigate();
 
   const table = useReactTable({
     data: stocks,
@@ -163,7 +160,11 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
           <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
-                <TableRow key={row.id} data-state={row.getIsSelected() && "selected"}>
+                <TableRow
+                  key={row.id}
+                  data-state={row.getIsSelected() && "selected"}
+                  onClick={() => navigate(`/stock/${row.original.symbol}`)}
+                >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}

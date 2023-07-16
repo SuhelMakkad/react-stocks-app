@@ -1,9 +1,5 @@
 export const categories = [
   {
-    id: "all",
-    label: "All",
-  },
-  {
     id: "main-market",
     label: "Main Market",
   },
@@ -15,4 +11,6 @@ export const categories = [
     id: "special-market",
     label: "Special Market",
   },
-];
+] as const;
+
+export type CategoryId = (typeof categories)[number]["id"];

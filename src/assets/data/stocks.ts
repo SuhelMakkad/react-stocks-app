@@ -1,3 +1,4 @@
+import { CategoryId } from "./category";
 import stockChartOverview from "./chart";
 import type { ChartData } from "./chart";
 
@@ -10,9 +11,11 @@ export type Stock = {
   currentPrice: number;
   percentageChange: number;
   trend: Trend;
-  category: string;
+  category: CategoryId | "overview";
   chartData: ChartData;
 };
+
+export type GroupedStocks = Record<Stock["category"], Stock[]>;
 
 export const stocks: Stock[] = [
   // main market stocks
@@ -213,3 +216,16 @@ export const stocks: Stock[] = [
     chartData: stockChartOverview.AMZN,
   },
 ];
+
+export const getGroupedStocks = () => {
+  const groups = {} as GroupedStocks;
+
+  stocks.forEach((stock) => {
+    if (!groups[stock.category]) {
+      groups[stock.category] = [];
+    }
+    groups[stock.category].push(stock);
+  });
+
+  return groups;
+};
