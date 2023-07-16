@@ -41,7 +41,7 @@ pnpm install
 Build the app for production
 
 ```
-pnpm build
+pnpm run build
 ```
 
 All the static assets will be added to the dist folder. This folder can be hosted on any CDN.
