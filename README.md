@@ -46,4 +46,4 @@ pnpm run build
 
 All the static assets will be added to the dist folder. This folder can be hosted on any CDN.
 
-> We can also use npm instead pnpm of, just replace pnpm with npm
+> We can also use npm instead pnpm, just replace pnpm with npm
