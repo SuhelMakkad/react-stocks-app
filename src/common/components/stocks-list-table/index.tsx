@@ -56,7 +56,7 @@ const StocksListTable = ({ stocks }: StocksListTableProps) => {
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full select-none">
       <div className="flex items-center gap-2 px-2 py-3 bg-transparent rounded-lg border mb-6 max-w-lg">
         <Search className="w-4 h-4" />
         <input
