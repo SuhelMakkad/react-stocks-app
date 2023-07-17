@@ -74,7 +74,7 @@ const StocksListTable = ({ stocks, searchWrapperClassName }: StocksListTableProp
         />
       </div>
 
-      <div className="md:rounded-md md:mx-auto px-3 border-t border-b md:border-l md:border-r">
+      <div className="md:rounded-md md:mx-auto border-t border-b md:border-l md:border-r">
         <Table className="touch-pan-y">
           <TableHeader className="max-md:hidden">
             {table.getHeaderGroups().map((headerGroup) => (

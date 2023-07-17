@@ -34,7 +34,7 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <div className="flex flex-col capitalize max-w-[8rem] md:max-w-none">
+      <div className="flex flex-col capitalize max-w-[8rem] md:max-w-none pl-3 md:pl-0">
         <span className="text-lg font-medium uppercase">{row.original.symbol}</span>
         <span className="text-secondary-foreground">{row.getValue("fullName")}</span>
       </div>
@@ -66,7 +66,7 @@ export const columns: ColumnDef<Stock>[] = [
       );
     },
     cell: ({ row }) => (
-      <div className="flex flex-col md:flex-row gap-1 items-end md:items-center lowercase">
+      <div className="flex flex-col md:flex-row gap-1 items-end md:items-center lowercase pr-3 md:pr-0">
         <span className="text-lg font-medium">{formateAmount(row.getValue("currentPrice"))}</span>
         <TrendChip
           className="grow-0 w-max scale-90"
